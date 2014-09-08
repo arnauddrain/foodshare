@@ -22,21 +22,18 @@ class __TwigTemplate_0230bdd0d05da4746df2e943fc320925 extends Twig_Template
         if (array_key_exists("alerts", $context)) {
             // line 3
             echo "\t\t";
-            if (isset($context["alerts"])) { $_alerts_ = $context["alerts"]; } else { $_alerts_ = null; }
             $context['_parent'] = (array) $context;
-            $context['_seq'] = twig_ensure_traversable($_alerts_);
+            $context['_seq'] = twig_ensure_traversable((isset($context["alerts"]) ? $context["alerts"] : null));
             foreach ($context['_seq'] as $context["_key"] => $context["alert"]) {
                 // line 4
                 echo "\t\t\t";
-                if (isset($context["alert"])) { $_alert_ = $context["alert"]; } else { $_alert_ = null; }
-                if (($this->getAttribute($_alert_, "type") == "error")) {
+                if (($this->getAttribute((isset($context["alert"]) ? $context["alert"] : null), "type") == "error")) {
                     // line 5
                     echo "\t\t\t\t<div class=\"alert alert-dismissable alert-danger\">
 \t\t\t\t\t<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>
 \t\t\t\t\t";
                     // line 7
-                    if (isset($context["alert"])) { $_alert_ = $context["alert"]; } else { $_alert_ = null; }
-                    echo twig_escape_filter($this->env, $this->getAttribute($_alert_, "text"), "html", null, true);
+                    echo twig_escape_filter($this->env, $this->getAttribute((isset($context["alert"]) ? $context["alert"] : null), "text"), "html", null, true);
                     echo "
 \t\t\t\t</div>
 \t\t\t";
@@ -46,8 +43,7 @@ class __TwigTemplate_0230bdd0d05da4746df2e943fc320925 extends Twig_Template
 \t\t\t\t\t<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>
 \t\t\t\t\t";
                     // line 12
-                    if (isset($context["alert"])) { $_alert_ = $context["alert"]; } else { $_alert_ = null; }
-                    echo twig_escape_filter($this->env, $this->getAttribute($_alert_, "text"), "html", null, true);
+                    echo twig_escape_filter($this->env, $this->getAttribute((isset($context["alert"]) ? $context["alert"] : null), "text"), "html", null, true);
                     echo "
 \t\t\t\t</div>
 \t\t\t";
@@ -79,6 +75,6 @@ class __TwigTemplate_0230bdd0d05da4746df2e943fc320925 extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  63 => 16,  49 => 12,  45 => 10,  38 => 7,  34 => 5,  30 => 4,  24 => 3,  64 => 34,  51 => 23,  39 => 15,  36 => 14,  33 => 13,  19 => 1,  89 => 34,  86 => 33,  79 => 31,  76 => 30,  69 => 20,  66 => 17,  59 => 35,  56 => 14,  54 => 30,  44 => 22,  42 => 19,  22 => 2,  31 => 4,  28 => 3,);
+        return array (  52 => 14,  46 => 12,  36 => 7,  32 => 5,  29 => 4,  24 => 3,  62 => 17,  49 => 23,  38 => 15,  35 => 14,  33 => 13,  19 => 1,  89 => 34,  86 => 33,  79 => 31,  76 => 30,  69 => 20,  66 => 19,  59 => 16,  56 => 33,  54 => 30,  44 => 22,  42 => 10,  22 => 2,  31 => 4,  28 => 3,);
     }
 }

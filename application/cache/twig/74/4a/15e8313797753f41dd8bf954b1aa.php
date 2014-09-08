@@ -30,14 +30,12 @@ class __TwigTemplate_744a15e8313797753f41dd8bf954b1aa extends Twig_Template
 \t\t\t<div class=\"navbar-right\">
 \t\t\t\t";
         // line 13
-        if (isset($context["user"])) { $_user_ = $context["user"]; } else { $_user_ = null; }
-        if ($_user_) {
+        if ((isset($context["user"]) ? $context["user"] : null)) {
             // line 14
             echo "\t\t\t\t\t<ul class=\"nav navbar-nav\">
 \t\t\t\t\t\t<li><a href=\"#profile\">";
             // line 15
-            if (isset($context["user"])) { $_user_ = $context["user"]; } else { $_user_ = null; }
-            echo twig_escape_filter($this->env, $this->getAttribute($_user_, "pseudo"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "pseudo"), "html", null, true);
             echo "</a></li>
 \t\t\t\t\t\t<li>
 \t\t\t\t\t\t\t<form class=\"navbar-form\" method=\"post\" action=\"/user/logout\">
@@ -97,6 +95,6 @@ class __TwigTemplate_744a15e8313797753f41dd8bf954b1aa extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  64 => 34,  51 => 23,  39 => 15,  36 => 14,  33 => 13,  19 => 1,  89 => 34,  86 => 33,  79 => 31,  76 => 30,  69 => 20,  66 => 19,  59 => 35,  56 => 33,  54 => 30,  44 => 22,  42 => 19,  22 => 1,);
+        return array (  62 => 34,  49 => 23,  38 => 15,  35 => 14,  33 => 13,  19 => 1,  89 => 34,  86 => 33,  79 => 31,  76 => 30,  69 => 20,  66 => 19,  59 => 35,  56 => 33,  54 => 30,  44 => 22,  42 => 19,  22 => 1,  31 => 4,  28 => 3,);
     }
 }
