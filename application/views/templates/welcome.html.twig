@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Foodshare</title>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	
+	<link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="/css/jumbotron.css" rel="stylesheet" media="screen">
+	<link href="/css/authentication.css" rel="stylesheet" media="screen">
+	<link href="/css/menu.css" rel="stylesheet" media="screen">
+	
+	<script src="/js/jquery-2.0.3.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>	
+	<script src="/js/authentification.js"></script>
+</head>
+<body>
+
+	{% block header %}
+		{{ include('elements/header.html.twig') }}
+	{% endblock %}
+		
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Foodshare</h1>
+		</div>
+	</div>
+	
+	<div class="container">
+		{% block alerts %}
+			{{ include('elements/alerts.html.twig') }}
+		{% endblock %}
+		{% block content %}
+		{% endblock %}
+	</div>
+	
+</body>
+</html>

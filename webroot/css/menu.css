@@ -1,0 +1,13 @@
+div.menu {
+	text-align: center;
+}
+
+div.menu div.item {
+	width: 200px;
+	display: inline-block;
+	font-weight: bold;
+}
+
+div.menu div.item div.picture {
+	margin-bottom: 20px;
+}
