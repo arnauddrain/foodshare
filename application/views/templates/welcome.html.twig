@@ -74,7 +74,11 @@
 
 
 <body class="home page page-id-1852 page-template-default  boxed wpb-js-composer js-comp-ver-4.2.3 vc_responsive tribe-theme-garnish page-template-page-php sticky-nav">
-   <header><center><img style="padding-top: 20px;" src="./img/foodShare2.png"></center></header>
+   <header>
+       <center>
+           <img style="padding-top: 20px;" src="./img/foodShare2.png">
+       </center>
+   </header>
     
     <div class="mobile-nav-wrapper">
         <div id="mobileSlickNav">
@@ -132,6 +136,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<a class="cart-contents" href="http://demo.boxystudio.com/garnish/cart/" title="View your shopping cart">0 items - <span class="amount">$0.00</span></a>
         </div>
     </div>
+    
     <nav class="shell fixed">
         <ul id="menu-main-menu" class="menu">
             <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009"><a href="./Garnish_files/Garnish.htm" class="">Homepage Examples</a>
@@ -146,13 +151,14 @@
             </li>
         </ul>         
     </nav>
-        <section id="slider" style="height:576px;" class="shell clearfix garnish">
-            {% block alerts %}
-                {% include 'elements/alerts.html.twig' %}
-            {% endblock %}
-            {% block content %}
-            {% endblock %}
-        </section>
+    
+        
+        {% block alerts %}
+            {% include 'elements/alerts.html.twig' %}
+        {% endblock %}
+        {% block content %}
+        {% endblock %}
+        
       
         <div class="shell clearfix">
             <section id="bottom-bar">

@@ -94,7 +94,11 @@ class __TwigTemplate_eb707a4cad621b92cc45abddd27a8007 extends Twig_Template
 
 
 <body class=\"home page page-id-1852 page-template-default  boxed wpb-js-composer js-comp-ver-4.2.3 vc_responsive tribe-theme-garnish page-template-page-php sticky-nav\">
-   <header><center><img style=\"padding-top: 20px;\" src=\"./img/foodShare2.png\"></center></header>
+   <header>
+       <center>
+           <img style=\"padding-top: 20px;\" src=\"./img/foodShare2.png\">
+       </center>
+   </header>
     
     <div class=\"mobile-nav-wrapper\">
         <div id=\"mobileSlickNav\">
@@ -152,6 +156,7 @@ class __TwigTemplate_eb707a4cad621b92cc45abddd27a8007 extends Twig_Template
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class=\"fa fa-shopping-cart\"></i>&nbsp;&nbsp;<a class=\"cart-contents\" href=\"http://demo.boxystudio.com/garnish/cart/\" title=\"View your shopping cart\">0 items - <span class=\"amount\">\$0.00</span></a>
         </div>
     </div>
+    
     <nav class=\"shell fixed\">
         <ul id=\"menu-main-menu\" class=\"menu\">
             <li class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009\"><a href=\"./Garnish_files/Garnish.htm\" class=\"\">Homepage Examples</a>
@@ -166,15 +171,16 @@ class __TwigTemplate_eb707a4cad621b92cc45abddd27a8007 extends Twig_Template
             </li>
         </ul>         
     </nav>
-        <section id=\"slider\" style=\"height:576px;\" class=\"shell clearfix garnish\">
-            ";
-        // line 150
+    
+        
+        ";
+        // line 156
         $this->displayBlock('alerts', $context, $blocks);
-        // line 153
-        echo "            ";
+        // line 159
+        echo "        ";
         $this->displayBlock('content', $context, $blocks);
-        // line 155
-        echo "        </section>
+        // line 161
+        echo "        
       
         <div class=\"shell clearfix\">
             <section id=\"bottom-bar\">
@@ -234,21 +240,21 @@ var wc_cart_fragments_params = {\"ajax_url\":\"\\/garnish\\/wp-admin\\/admin-aja
 </body></html>";
     }
 
-    // line 150
+    // line 156
     public function block_alerts($context, array $blocks = array())
     {
-        // line 151
-        echo "                ";
-        $this->env->loadTemplate("elements/alerts.html.twig")->display($context);
-        // line 152
+        // line 157
         echo "            ";
+        $this->env->loadTemplate("elements/alerts.html.twig")->display($context);
+        // line 158
+        echo "        ";
     }
 
-    // line 153
+    // line 159
     public function block_content($context, array $blocks = array())
     {
-        // line 154
-        echo "            ";
+        // line 160
+        echo "        ";
     }
 
     public function getTemplateName()
@@ -258,6 +264,6 @@ var wc_cart_fragments_params = {\"ajax_url\":\"\\/garnish\\/wp-admin\\/admin-aja
 
     public function getDebugInfo()
     {
-        return array (  251 => 154,  248 => 153,  244 => 152,  241 => 151,  238 => 150,  177 => 155,  174 => 153,  172 => 150,  21 => 1,);
+        return array (  257 => 160,  254 => 159,  250 => 158,  247 => 157,  244 => 156,  183 => 161,  180 => 159,  178 => 156,  21 => 1,  31 => 3,  28 => 2,);
     }
 }
