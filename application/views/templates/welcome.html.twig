@@ -4,7 +4,7 @@
 
       
 
-   <title>Garnish</title>
+   <title>Food Share</title>
    <meta charset="UTF-8"><div class="fit-vids-style" id="fit-vids-style" style="display: none;">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o?o:n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({D5DuLP:[function(t,n){function e(t,n){var e=r[t];return e?e.apply(this,n):(o[t]||(o[t]=[]),void o[t].push(n))}var r={},o={};n.exports=e,e.queues=o,e.handlers=r},{}],handle:[function(t,n){n.exports=t("D5DuLP")},{}],G9z0Bl:[function(t,n){function e(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&p&&p.body){l.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",i("mark",["onload",a()]);var n=p.createElement("script");n.src=l.proto+t.agent,p.body.appendChild(n)}}function r(){"complete"===p.readyState&&o()}function o(){i("mark",["domContent",a()])}function a(){return(new Date).getTime()}var i=t("handle"),u=window,p=u.document,s="addEventListener",c="attachEvent",f=(""+location).split("?")[0],l=n.exports={offset:a(),origin:f,features:[]};p[s]?(p[s]("DOMContentLoaded",o,!1),u[s]("load",e,!1)):(p[c]("onreadystatechange",r),u[c]("onload",e)),i("mark",["firstbyte",a()])},{handle:"D5DuLP"}],loader:[function(t,n){n.exports=t("G9z0Bl")},{}]},{},["G9z0Bl"]);</script>
    
    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">  
@@ -27,6 +27,10 @@
    .video-js .vjs-poster { display:block !important; }
    </style>
    <![endif]-->
+   
+   <link rel="stylesheet" href="/css/bootstrap.css">
+   <script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
+   <script type="text/javascript" src="/js/bootstrap.js"></script>
    
    <link rel="alternate" type="application/rss+xml" title="Garnish » Feed" href="http://demo.boxystudio.com/garnish/feed/">
 <link rel="alternate" type="application/rss+xml" title="Garnish » Comments Feed" href="http://demo.boxystudio.com/garnish/comments/feed/">
@@ -151,20 +155,73 @@
             </ul>    
         {% else %}
             <ul>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009"><a href="user/registration" class="">Inscription</a>
-                    <section class="dropdown" style="opacity: 0; display: none;">
-                        <ul>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item menu-item-1862"><a href="./Garnish_files/Garnish.htm" class="">Garnish Slider</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1869"><a href="http://demo.boxystudio.com/garnish/slider-revolution/" class="">Slider Revolution</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2130"><a href="http://demo.boxystudio.com/garnish/soliloquy-slider/" class="">Soliloquy Slider</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1875"><a href="http://demo.boxystudio.com/garnish/no-slider/" class="">No Slider</a></li>
-                        </ul>
-                    </section>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
+                    <a href="#" data-toggle="modal" data-target="#register" class="">Inscription</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
+                    <a href="#" data-toggle="modal" data-target="#connexion" class="">Connexion</a>
                 </li>
             </ul>
         {% endif %}
     </nav>
     
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">Inscription</h4>
+            </div>
+            <div class="modal-body">
+              <form role="form">
+                <div class="form-group">
+                  <label for="pseudo">Pseudo</label>
+                  <input type="text" class="form-control" id="Pseudo" placeholder="Pseudo">
+                </div>
+                <div class="form-group">
+                  <label for="password">Mot de passe</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+              <button type="button" class="btn btn-primary">Valider</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="connexion" tabindex="-1" role="dialog" aria-labelledby="connexion" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">Connexion</h4>
+            </div>
+            <div class="modal-body">
+              <form role="form">
+                <div class="form-group">
+                  <label for="pseudo">Pseudo</label>
+                  <input type="text" class="form-control" id="Pseudo" placeholder="Pseudo">
+                </div>
+                <div class="form-group">
+                  <label for="password">Mot de passe</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+              <button type="button" class="btn btn-primary">Connexion</button>
+            </div>
+          </div>
+        </div>
+    </div>
         
         {% block alerts %}
             {% include 'elements/alerts.html.twig' %}
