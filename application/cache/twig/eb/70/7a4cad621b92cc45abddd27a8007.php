@@ -524,6 +524,6 @@ var wc_cart_fragments_params = {\"ajax_url\":\"\\/garnish\\/wp-admin\\/admin-aja
 
     public function getDebugInfo()
     {
-        return array (  517 => 424,  514 => 423,  510 => 422,  507 => 421,  504 => 420,  447 => 425,  444 => 423,  442 => 420,  21 => 1,);
+        return array (  517 => 424,  514 => 423,  510 => 422,  507 => 421,  504 => 420,  447 => 425,  444 => 423,  442 => 420,  21 => 1,  31 => 3,  28 => 2,);
     }
 }
