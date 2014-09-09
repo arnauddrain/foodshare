@@ -10,11 +10,6 @@
    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">  
    <link rel="shortcut icon" href="http://demo.boxystudio.com/garnish/wp-content/themes/garnish/favicon.ico">
       
-   <!-- BOOTSTRAP + JQUERY (at least for alerts) -->
-   <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
-   <script src="/js/jquery-2.0.3.min.js"></script>
-   <script src="/js/bootstrap.min.js"></script>
-
    <style type="text/css"> header { height:250px; } header #logo { height:250px; }</style>      <style type="text/css">
        
          .woocommerce ul.products li.product a img,
@@ -417,9 +412,6 @@
 </ul>         
     </nav>
       <section id="slider" style="height:576px;" class="shell clearfix garnish">
-         {% block alerts %}
-            {% include 'elements/alerts.html.twig' %}
-         {% endblock %}
          {% block content %}
          {% endblock %}
       </section>

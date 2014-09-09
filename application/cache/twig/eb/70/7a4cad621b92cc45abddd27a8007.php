@@ -10,7 +10,6 @@ class __TwigTemplate_eb707a4cad621b92cc45abddd27a8007 extends Twig_Template
         $this->parent = false;
 
         $this->blocks = array(
-            'alerts' => array($this, 'block_alerts'),
             'content' => array($this, 'block_content'),
         );
     }
@@ -30,11 +29,6 @@ class __TwigTemplate_eb707a4cad621b92cc45abddd27a8007 extends Twig_Template
    <meta name=\"viewport\" content=\"width=device-width, minimum-scale=1, maximum-scale=1\">  
    <link rel=\"shortcut icon\" href=\"http://demo.boxystudio.com/garnish/wp-content/themes/garnish/favicon.ico\">
       
-   <!-- BOOTSTRAP + JQUERY (at least for alerts) -->
-   <link href=\"/css/bootstrap.min.css\" rel=\"stylesheet\" media=\"screen\">
-   <script src=\"/js/jquery-2.0.3.min.js\"></script>
-   <script src=\"/js/bootstrap.min.js\"></script>
-
    <style type=\"text/css\"> header { height:250px; } header #logo { height:250px; }</style>      <style type=\"text/css\">
        
          .woocommerce ul.products li.product a img,
@@ -438,12 +432,9 @@ class __TwigTemplate_eb707a4cad621b92cc45abddd27a8007 extends Twig_Template
     </nav>
       <section id=\"slider\" style=\"height:576px;\" class=\"shell clearfix garnish\">
          ";
-        // line 420
-        $this->displayBlock('alerts', $context, $blocks);
-        // line 423
-        echo "         ";
+        // line 415
         $this->displayBlock('content', $context, $blocks);
-        // line 425
+        // line 417
         echo "      </section>
       
       <div class=\"shell clearfix\">
@@ -500,20 +491,10 @@ var wc_cart_fragments_params = {\"ajax_url\":\"\\/garnish\\/wp-admin\\/admin-aja
 </body></html>";
     }
 
-    // line 420
-    public function block_alerts($context, array $blocks = array())
-    {
-        // line 421
-        echo "            ";
-        $this->env->loadTemplate("elements/alerts.html.twig")->display($context);
-        // line 422
-        echo "         ";
-    }
-
-    // line 423
+    // line 415
     public function block_content($context, array $blocks = array())
     {
-        // line 424
+        // line 416
         echo "         ";
     }
 
@@ -524,6 +505,10 @@ var wc_cart_fragments_params = {\"ajax_url\":\"\\/garnish\\/wp-admin\\/admin-aja
 
     public function getDebugInfo()
     {
+<<<<<<< HEAD
         return array (  517 => 424,  514 => 423,  510 => 422,  507 => 421,  504 => 420,  447 => 425,  444 => 423,  442 => 420,  21 => 1,  31 => 3,  28 => 2,);
+=======
+        return array (  498 => 416,  495 => 415,  438 => 417,  436 => 415,  20 => 1,);
+>>>>>>> parent of 18f5fb6... add files for alerts
     }
 }
