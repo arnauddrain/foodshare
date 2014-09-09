@@ -75,6 +75,7 @@ class __TwigTemplate_eb707a4cad621b92cc45abddd27a8007 extends Twig_Template
 <link rel=\"stylesheet\" id=\"custom-magnific-css\" href=\"./Garnish_files/magnific.css\" type=\"text/css\" media=\"all\">
 <link rel=\"stylesheet\" id=\"custom-responsive-css\" href=\"./Garnish_files/responsive.css\" type=\"text/css\" media=\"all\">
 <link rel=\"stylesheet\" id=\"custom-google-fonts-css\" href=\"./Garnish_files/css\" type=\"text/css\" media=\"all\">
+<link rel=\"stylesheet\" href=\"/css/garnish_style.css\" type=\"text/css\" media=\"all\">
 <script type=\"text/javascript\" src=\"./Garnish_files/jquery.js\"></script>
 <script type=\"text/javascript\" src=\"./Garnish_files/jquery-migrate.min.js\"></script>
 <script type=\"text/javascript\" src=\"./Garnish_files/jquery.themepunch.tools.min.js\"></script>
@@ -87,163 +88,7 @@ class __TwigTemplate_eb707a4cad621b92cc45abddd27a8007 extends Twig_Template
 <meta name=\"generator\" content=\"WooCommerce 2.1.12\">
 <link rel=\"canonical\" href=\"./Garnish_files/Garnish.htm\">
 <link rel=\"shortlink\" href=\"./Garnish_files/Garnish.htm\">
-<style type=\"text/css\">
-   
-      @media only screen and (max-width: 500px) { #top-bar p.right, .hide-spacer-on-mobile { display:none; }#top-bar p.left { padding-bottom:13px !important; } } 
-      /* Main Font & Body Background Color/Image */
-         body { color:#555555; background:#1f1b1a url('http://demo.boxystudio.com/garnish/wp-content/uploads/2014/04/body_bg1.jpg'); background-repeat: repeat-x; background-position: center top; background-attachment: static; font:300 15px/24px 'Oxygen'; }
-         
-         /* Full Width? */
-         .shell { width:1200px; }
-                  
-         /* Main Content Background & Text/Link Color */
-         .homepage-block, .block-spacer, #page-post, h2.centered span, .tribe-events-list-separator-month span { background:#ffffff; }
-         #page-post h1,#page-post h2,#page-post h3,#page-post h4,#page-post h5,#page-post h6,#page-post p,#page-post ul,#page-post ol,#page-post li,.homepage-block h1,.homepage-block h2,.homepage-block h3,.homepage-block h4,.homepage-block h5,.homepage-block h6,.homepage-block p,.homepage-block ul,.homepage-block ol,.homepage-block li, .post-meta span a:hover, .fg-schedule-block .fg-event h3 .fg-event-time .fa, #page-post .event-is-recurring
-         /* Main Text Color */ { color:#555555; }
-         #page-post a, #page-post h1 a,#page-post h2 a,#page-post h3 a,#page-post h4 a,#page-post h5 a,#page-post h6 a,#page-post p a,#page-post ul a,#page-post ol a,#page-post li a,.homepage-block a,.homepage-block h1 a,.homepage-block h2 a,.homepage-block h3 a,.homepage-block h4 a,.homepage-block h5 a,.homepage-block h6 a,.homepage-block p a,.homepage-block ul a,.homepage-block ol a,.homepage-block li a
-         /* Main Link Color */ { color:#83c74f; }
-         #page-post a:hover, #page-post h1 a:hover,#page-post h2 a:hover,#page-post h3 a:hover,#page-post h4 a:hover,#page-post h5 a:hover,#page-post h6 a:hover,#page-post p a:hover,#page-post ul a:hover,#page-post ol a:hover,#page-post li a:hover,.homepage-block a:hover,.homepage-block h1 a:hover,.homepage-block h2 a:hover,.homepage-block h3 a:hover,.homepage-block h4 a:hover,.homepage-block h5 a:hover,.homepage-block h6 a:hover,.homepage-block p a:hover,.homepage-block ul a:hover,.homepage-block ol a:hover,.homepage-block li a:hover
-         /* Main Hover Color */ { color:#555555; }
-         
-         /* Button Colors */
-         body .bx-btn, #page-post a.bx-btn { border-color:#F3935B; color:#F3935B !important; }
-         body .bx-btn:hover, #page-post a.bx-btn:hover { background-color:#F3935B; color:#fff !important; }
-         body .fg-schedule-tabs .date-range { color:#F3935B; }
-         body input.es-button, body a.es-button, body input[type=button], body input[type=submit] { background:#F3935B; color:#fff; }
-         body input.es-button:hover, body a.es-button:hover, body input[type=button]:hover, body input[type=submit]:hover { background:#555555; color:#fff; }
-         
-         /* Top Bar Background, Text & Link Colors */
-         #top-bar { background:#000000; }
-         #top-bar { color:#ffffff; }
-         #top-bar .socials .fa { color:#000000; }
-         #top-bar .socials a.ico { background:#ffffff; }
-         #top-bar .fa, #top-bar a, #top-bar .socials a.ico:hover .fa { color:#83C74F; }
-         #top-bar .socials .fa.fa-shopping-cart { color:#ffffff; }
-         
-         /* Navigation Background & Link Colors */
-         nav, #tribe-bar-collapse-toggle { background:#83C74F; }
-         nav > ul > li > a { color:#fff; }
-         nav > ul > li > a:hover, nav > ul > li > a.hovered { background:#75B246; color:#fff; }
-         nav > ul .dropdown { background:#75B246; }
-         nav > ul .dropdown a { color:#fff; }
-         nav > ul .dropdown a:hover { background:#fff; color:#555; }
-         
-         /* Slicknav to Match the Navigation */
-         .slicknav_menu { background:#83C74F; }
-         .slicknav_nav .slicknav_item:hover,
-         .slicknav_nav a:hover,
-         .slicknav_btn { color:#fff; background:#75B246; }
-         
-         /* Mobile Cart */
-         #mobile-cart, #mobile-cart a { color:#fff; }
-         
-         /* Slider Background & Text Color */
-         #slider { background-color:#fff; background-image:url('#'); }
-         #slider, #slider .spinner { color:#555; }
-         
-         /* Feature Blocks Background, Block, Shadow On/Off & Text Color */
-         #feature-blocks { background-color:#83C74F; background-image:url('#'); }
-         #feature-blocks .fblock { color:#555; background:#fff; -moz-box-shadow:5px 5px 0 rgba(0,0,0,0.15); -webkit-box-shadow:5px 5px 0 rgba(0,0,0,0.15); box-shadow:5px 5px 0 rgba(0,0,0,0.15); }
-         
-         /* Tiny Widget Buttons */
-         .widget .widget-button, #page-post a.comment-reply-link, #page-post #cancel-comment-reply-link { background:#83C74F; color:#fff; }
-         .widget .widget-button:hover, #page-post a.comment-reply-link:hover, #page-post #cancel-comment-reply-link:hover { background:#333; color:#fff; }
-         
-         /* Post Meta */
-         .post-meta, .post-meta span a, .post-meta, .post-meta span a, body .tweet_time a { color:#aaa; }
-         
-         /* Grey Items on White */
-         .tribe-events-list-separator-month:after, .espresso-menu .es-menu-item, .fg-schedule-block, h2.centered:before, #searchform .field, body .tribe-events-list-widget ol li.tribe-events-list-widget-events, body .widget article .facebook-widget li, body .widget article .tweets-widget li, body .tribe-mini-calendar-event, .single-tribe_events #tribe-events-footer, .tribe-events-day #tribe-events-footer, .events-list #tribe-events-footer, .tribe-events-map #tribe-events-footer, .tribe-events-photo #tribe-events-footer
-         { border-color:#ddd; }
-         
-         /* Recent Tweets Block */
-         body #recent-tweets { background:#55ACEE; }
-         body #recent-tweets a,body #recent-tweets .btn-prev,body #recent-tweets .btn-next, body #recent-tweets h3, body #recent-tweets p, body #recent-tweets small { color:#fff; }
-         
-         /* Event Schedule Tabs */
-         .fg-schedule-tabs { border-color:#83C74F; }
-         .fg-schedule-tabs a, .single-tribe_events .tribe-events-event-meta { border-color:#f2f2f2; background:#f2f2f2; }
-         .fg-schedule-tabs a .date { color:#888; }
-         .fg-schedule-tabs a .day, .fg-schedule-tabs a .count:hover { color:#000; }
-         .fg-schedule-tabs a .count.empty { color:#888; }
-         .fg-schedule-tabs a.active { border-color:#83C74F; background:#83C74F; }
-         .fg-schedule-tabs a.active .day, .fg-schedule-tabs a.active .count, .fg-schedule-tabs a.active .date { color:#fff; }
-         
-         .tribe-events-calendar thead th { background-color:#83C74F; border-color:#83C74F; }
-         #page-post .es-views-list ul li a { color:#888; }
-         
-         #page-post .es-views-list ul li.tribe-bar-active a
-         { border-color:#83C74F; }
-         
-         #page-post .tribe-events-calendar a
-         { color:#83C74F; }
-         
-         #page-post .tribe-events-calendar td.tribe-events-present div[id*=\"tribe-events-daynum-\"], #page-post .tribe-events-calendar td.tribe-events-present div[id*=\"tribe-events-daynum-\"]>a, #page-post #tribe_events_filters_wrapper input[type=submit], #page-post .tribe-events-button, #page-post #tribe-events .tribe-events-button, #page-post .tribe-events-button.tribe-inactive, #page-post #tribe-events .tribe-events-button:hover, #page-post .tribe-events-button:hover, #page-post .tribe-events-button.tribe-active:hover
-       { background-color:#83C74F; }
-         
-         #page-post .tribe-events-calendar thead th, #page-post .tribe-grid-allday .hentry.vevent>div, #page-post .tribe-grid-body div[id*=\"tribe-events-event-\"] .hentry.vevent, #page-post .tribe-grid-allday .hentry.vevent>div:hover, #page-post .tribe-grid-body div[id*=\"tribe-events-event-\"] .hentry.vevent:hover, #page-post .tribe-grid-header .column
-         { background-color:#83C74F; }
-         
-         #page-post .tribe-events-calendar thead th, #page-post .tribe-grid-allday .hentry.vevent>div, #page-post .tribe-grid-body div[id*=\"tribe-events-event-\"] .hentry.vevent, #page-post .tribe-grid-allday .hentry.vevent>div:hover, #page-post .tribe-grid-body div[id*=\"tribe-events-event-\"] .hentry.vevent:hover, #page-post .tribe-events-grid .tribe-grid-header .tribe-grid-content-wrap .column, #page-post .tribe-grid-header
-         { border-color:#83C74F; }
-         
-         #page-post #tribe-events-photo-events .vevent.tribe-events-photo-event, #page-post #tribe-events-photo-events .vevent.tribe-events-photo-event .event-is-recurring, #page-post #tribe-events-photo-events .vevent.tribe-events-photo-event a:hover, #page-post .tribe-events-calendar a:hover
-         { color:#555; }
-         
-         #page-post .tribe-events-calendar td.tribe-events-present div[id*=\"tribe-events-daynum-\"] > a, #page-post .tribe-events-calendar thead th, #page-post .tribe-grid-allday .hentry.vevent>div, #page-post .tribe-grid-body div[id*=\"tribe-events-event-\"] .hentry.vevent, #page-post .tribe-grid-body div[id*=\"tribe-events-event-\"] .hentry.vevent a, #page-post .tribe-grid-allday .hentry.vevent>div:hover, #page-post .tribe-grid-body div[id*=\"tribe-events-event-\"] .hentry.vevent:hover, #page-post .tribe-events-grid .tribe-grid-header .tribe-grid-content-wrap .column a, #page-post .tribe-events-calendar .tribe-events-has-events div[id*=\"tribe-events-daynum-\"] a
-         { color:#fff; }
-         
-         /* Mini Calendar */
-         body #footer-widgets .tribe-mini-calendar thead, body .tribe-mini-calendar-nav td,
-         body #footer-widgets .tribe-mini-calendar td.tribe-events-has-events,
-         body #footer-widgets .tribe-mini-calendar td.tribe-events-has-events a:hover,
-         body #footer-widgets .tribe-mini-calendar td.tribe-events-has-events.tribe-events-present,
-         body #footer-widgets .tribe-mini-calendar td.tribe-events-has-events.tribe-events-present a:hover { border-color:#F3935B !important; background:#F3935B !important; }
-         body #footer-widgets .tribe-mini-calendar td.tribe-events-has-events a { color:#ffffff !important; }
-         body #footer-widgets .tribe-mini-calendar td.tribe-events-has-events.tribe-mini-calendar-today,
-         body #footer-widgets .tribe-mini-calendar td.tribe-events-has-events.tribe-mini-calendar-today a:hover { background:#83C74F !important; }
-         
-         /* Footer Widgets */
-         body #footer-widgets { background-color:#333333; background-image:url('#'); color:#eee; }
-         body #footer-widgets a { color:#F3935B; }
-         body #footer-widgets a:hover,
-         body #footer-widgets p,
-         body #footer-widgets .widget article .facebook-widget .tweet_time a:hover,
-         body #footer-widgets .widget article .tweets-widget .tweet_time a:hover,
-         body #footer-widgets .post-meta span a:hover { color:#eee; }
-         body #footer-widgets div.tribe-countdown-number { color:#eee; }
-         
-         /* Tiny Widget Buttons */
-         body #footer-widgets .widget .widget-button { background:#83C74F; color:#ffffff; }
-         body #footer-widgets .widget .widget-button:hover { background:#ffffff; color:#555555; }
-         
-         /* Grey Items on Dark */
-         body #footer-widgets .post-meta,
-         body #footer-widgets .post-meta span a,
-         body #footer-widgets .widget article .facebook-widget .tweet_time a,
-         body #footer-widgets .widget article .tweets-widget .tweet_time a,
-         body #footer-widgets span.tribe-countdown-under,
-         body #footer-widgets article.hours-block p.right { color:#888; }
-         body #footer-widgets #searchform .field { border-color:#888; }
-         
-         /* Border Color */
-         body #footer-widgets .tribe-events-list-widget ol li.tribe-events-list-widget-events,
-         body #footer-widgets .widget article .facebook-widget li,
-         body #footer-widgets .widget article .tweets-widget li,
-         body #footer-widgets .tribe-mini-calendar-event { border-color:#555; }
-         
-         /* Bottom Bar Background, Text & Link Colors */
-         #bottom-bar { background:#000; }
-         #bottom-bar { color:#fff; }
-         #bottom-bar .socials .fa { color:#000; }
-         #bottom-bar .socials a.ico { background:#fff; }
-         #bottom-bar .fa, #bottom-bar a, #bottom-bar .socials a.ico:hover .fa { color:#83C74F; }
-         #bottom-bar .socials .fa.fa-shopping-cart { color:#fff; }
-         
-         .woocommerce .woocommerce-info, .woocommerce-page .woocommerce-info { border-color:#83c74f; }
-         .woocommerce .woocommerce-info:before, .woocommerce-page .woocommerce-info:before { background-color:#83c74f; }
-         
-    </style><meta name=\"generator\" content=\"Powered by Visual Composer - drag and drop page builder for WordPress.\">
+<meta name=\"generator\" content=\"Powered by Visual Composer - drag and drop page builder for WordPress.\">
 
 <style type=\"text/css\"></style><style type=\"text/css\">.fancybox-margin{margin-right:17px;}</style><style type=\"text/css\"></style></head>
 
@@ -251,210 +96,99 @@ class __TwigTemplate_eb707a4cad621b92cc45abddd27a8007 extends Twig_Template
 <body class=\"home page page-id-1852 page-template-default  boxed wpb-js-composer js-comp-ver-4.2.3 vc_responsive tribe-theme-garnish page-template-page-php sticky-nav\">
    <header><center><img style=\"padding-top: 20px;\" src=\"./img/foodShare2.png\"></center></header>
     
-    <div class=\"mobile-nav-wrapper\"><div id=\"mobileSlickNav\"><div class=\"slicknav_menu\"><a href=\"http://demo.boxystudio.com/garnish/#\" aria-haspopup=\"true\" tabindex=\"0\" class=\"slicknav_btn\" style=\"outline: none;\"><span class=\"slicknav_menutxt\"></span><span class=\"slicknav_icon slicknav_no-text\"><span class=\"slicknav_icon-bar\"></span><span class=\"slicknav_icon-bar\"></span><span class=\"slicknav_icon-bar\"></span></span></a><ul class=\"slicknav_nav slicknav_hidden\" aria-hidden=\"true\" role=\"menu\" style=\"display: none;\"><li class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009 slicknav_collapsed slicknav_parent\"><a href=\"http://demo.boxystudio.com/garnish/#\" role=\"menuitem\" aria-haspopup=\"true\" tabindex=\"-1\" class=\"slicknav_item\" style=\"outline: none;\"><a href=\"./Garnish_files/Garnish.htm\">Homepage Examples</a>
-<span class=\"slicknav_arrow\">►</span></a><ul class=\"sub-menu slicknav_hidden\" role=\"menu\" aria-hidden=\"true\" style=\"display: none;\">
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item menu-item-1862\"><a href=\"./Garnish_files/Garnish.htm\" role=\"menuitem\" tabindex=\"-1\">Garnish Slider</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1869\"><a href=\"http://demo.boxystudio.com/garnish/slider-revolution/\" role=\"menuitem\" tabindex=\"-1\">Slider Revolution</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2130\"><a href=\"http://demo.boxystudio.com/garnish/soliloquy-slider/\" role=\"menuitem\" tabindex=\"-1\">Soliloquy Slider</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1875\"><a href=\"http://demo.boxystudio.com/garnish/no-slider/\" role=\"menuitem\" tabindex=\"-1\">No Slider</a></li>
-</ul>
-</li>
-<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1842 slicknav_collapsed slicknav_parent\"><a href=\"http://demo.boxystudio.com/garnish/#\" role=\"menuitem\" aria-haspopup=\"true\" tabindex=\"-1\" class=\"slicknav_item\" style=\"outline: none;\"><a href=\"http://demo.boxystudio.com/garnish/#\">Page Options</a>
-<span class=\"slicknav_arrow\">►</span></a><ul class=\"sub-menu slicknav_hidden\" role=\"menu\" aria-hidden=\"true\" style=\"display: none;\">
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1860\"><a href=\"http://demo.boxystudio.com/garnish/visual-composer-page/\" role=\"menuitem\" tabindex=\"-1\">Visual Composer</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1872\"><a href=\"http://demo.boxystudio.com/garnish/left-sidebar/\" role=\"menuitem\" tabindex=\"-1\">Left Sidebar</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1871\"><a href=\"http://demo.boxystudio.com/garnish/right-sidebar/\" role=\"menuitem\" tabindex=\"-1\">Right Sidebar</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1882\"><a href=\"http://demo.boxystudio.com/garnish/envira-gallery-example/\" role=\"menuitem\" tabindex=\"-1\">Envira Gallery</a></li>
-</ul>
-</li>
-<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1873 slicknav_collapsed slicknav_parent\"><a href=\"http://demo.boxystudio.com/garnish/#\" role=\"menuitem\" aria-haspopup=\"true\" tabindex=\"-1\" class=\"slicknav_item\" style=\"outline: none;\"><a href=\"http://demo.boxystudio.com/garnish/menu-builder/\">Menu Builder</a>
-<span class=\"slicknav_arrow\">►</span></a><ul class=\"sub-menu slicknav_hidden\" role=\"menu\" aria-hidden=\"true\" style=\"display: none;\">
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1874\"><a href=\"http://demo.boxystudio.com/garnish/menu-builder/\" role=\"menuitem\" tabindex=\"-1\">Boxy’s Menu Builder</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1867\"><a href=\"http://demo.boxystudio.com/garnish/espresso-menus/coffees/\" role=\"menuitem\" tabindex=\"-1\">Coffee Menu w/Images</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1866\"><a href=\"http://demo.boxystudio.com/garnish/espresso-menus/lunch-menu/\" role=\"menuitem\" tabindex=\"-1\">Two Menus on Page</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1977\"><a href=\"http://demo.boxystudio.com/garnish/no-price-menu-clean/\" role=\"menuitem\" tabindex=\"-1\">No Prices Menu</a></li>
-</ul>
-</li>
-<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1843 slicknav_collapsed slicknav_parent\"><a href=\"http://demo.boxystudio.com/garnish/#\" role=\"menuitem\" aria-haspopup=\"true\" tabindex=\"-1\" class=\"slicknav_item\" style=\"outline: none;\"><a href=\"http://demo.boxystudio.com/garnish/events/\">Events</a>
-<span class=\"slicknav_arrow\">►</span></a><ul class=\"sub-menu slicknav_hidden\" role=\"menu\" aria-hidden=\"true\" style=\"display: none;\">
-   <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1845\"><a href=\"http://demo.boxystudio.com/garnish/events/upcoming/\" role=\"menuitem\" tabindex=\"-1\">List View</a></li>
-   <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1844\"><a href=\"http://demo.boxystudio.com/garnish/events/month/\" role=\"menuitem\" tabindex=\"-1\">Month View</a></li>
-   <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1846\"><a href=\"http://demo.boxystudio.com/garnish/events/week/\" role=\"menuitem\" tabindex=\"-1\">Week View</a></li>
-   <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1847\"><a href=\"http://demo.boxystudio.com/garnish/events/today/\" role=\"menuitem\" tabindex=\"-1\">Today View</a></li>
-   <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1848\"><a href=\"http://demo.boxystudio.com/garnish/events/map/\" role=\"menuitem\" tabindex=\"-1\">Map View</a></li>
-   <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1849\"><a href=\"http://demo.boxystudio.com/garnish/events/photo/\" role=\"menuitem\" tabindex=\"-1\">Photo View</a></li>
-   <li class=\"menu-item menu-item-type-taxonomy menu-item-object-tribe_events_cat menu-item-1856\"><a href=\"http://demo.boxystudio.com/garnish/events/category/events/\" role=\"menuitem\" tabindex=\"-1\">Event Category</a></li>
-</ul>
-</li>
-<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1868 slicknav_collapsed slicknav_parent\"><a href=\"http://demo.boxystudio.com/garnish/#\" role=\"menuitem\" aria-haspopup=\"true\" tabindex=\"-1\" class=\"slicknav_item\" style=\"outline: none;\"><a href=\"http://demo.boxystudio.com/garnish/shop/\">WooCommerce</a>
-<span class=\"slicknav_arrow\">►</span></a><ul class=\"sub-menu slicknav_hidden\" role=\"menu\" aria-hidden=\"true\" style=\"display: none;\">
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1881\"><a href=\"http://demo.boxystudio.com/garnish/shop/\" role=\"menuitem\" tabindex=\"-1\">Store Home</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-product menu-item-1880\"><a href=\"http://demo.boxystudio.com/garnish/shop/mocha-tesora/\" role=\"menuitem\" tabindex=\"-1\">Product Page</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1853\"><a href=\"http://demo.boxystudio.com/garnish/cart/\" role=\"menuitem\" tabindex=\"-1\">Cart</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1854\"><a href=\"http://demo.boxystudio.com/garnish/checkout/\" role=\"menuitem\" tabindex=\"-1\">Checkout</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1855\"><a href=\"http://demo.boxystudio.com/garnish/my-account/\" role=\"menuitem\" tabindex=\"-1\">My Account</a></li>
-</ul>
-</li>
-<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1863 slicknav_collapsed slicknav_parent\"><a href=\"http://demo.boxystudio.com/garnish/#\" role=\"menuitem\" aria-haspopup=\"true\" tabindex=\"-1\" class=\"slicknav_item\" style=\"outline: none;\"><a href=\"http://demo.boxystudio.com/garnish/blog/\">The Garnish Blog</a>
-<span class=\"slicknav_arrow\">►</span></a><ul class=\"sub-menu slicknav_hidden\" role=\"menu\" aria-hidden=\"true\" style=\"display: none;\">
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1864\"><a href=\"http://demo.boxystudio.com/garnish/blog/\" role=\"menuitem\" tabindex=\"-1\">Blog Posts</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1876\"><a href=\"http://demo.boxystudio.com/garnish/blog/2013/11/23/healthy-dinners-in-40-minutes-or-less/\" role=\"menuitem\" tabindex=\"-1\">Normal Post</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1879\"><a href=\"http://demo.boxystudio.com/garnish/blog/2013/10/25/this-is-an-espresso-gallery/\" role=\"menuitem\" tabindex=\"-1\">Gallery Post</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1877\"><a href=\"http://demo.boxystudio.com/garnish/blog/2013/10/25/this-is-a-video-post/\" role=\"menuitem\" tabindex=\"-1\">Video Post</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1878\"><a href=\"http://demo.boxystudio.com/garnish/blog/2013/10/25/this-is-an-audio-post/\" role=\"menuitem\" tabindex=\"-1\">Audio Post</a></li>
-</ul>
-</li>
-<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1850 slicknav_collapsed slicknav_parent\"><a href=\"http://demo.boxystudio.com/garnish/#\" role=\"menuitem\" aria-haspopup=\"true\" tabindex=\"-1\" class=\"slicknav_item\" style=\"outline: none;\"><a href=\"http://demo.boxystudio.com/garnish/#\">Forms</a>
-<span class=\"slicknav_arrow\">►</span></a><ul class=\"sub-menu slicknav_hidden\" role=\"menu\" aria-hidden=\"true\" style=\"display: none;\">
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1865\"><a href=\"http://demo.boxystudio.com/garnish/gravity-form/\" role=\"menuitem\" tabindex=\"-1\">Gravity Form</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1858\"><a href=\"http://demo.boxystudio.com/garnish/contact-form-7/\" role=\"menuitem\" tabindex=\"-1\">Contact Form 7</a></li>
-</ul>
-</li>
-<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1851\"><a href=\"http://themeforest.net/item/garnish-a-wordpress-theme-for-restaurants/7985827/?ref=boxystudio\" role=\"menuitem\" tabindex=\"-1\">Purchase</a></li>
-</ul></div></div><ul id=\"mobileNav\" class=\"menu\"><li id=\"menu-item-2009\" class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009\"><a href=\"./Garnish_files/Garnish.htm\">Homepage Examples</a>
-<ul class=\"sub-menu\">
-   <li id=\"menu-item-1862\" class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item menu-item-1862\"><a href=\"./Garnish_files/Garnish.htm\">Garnish Slider</a></li>
-   <li id=\"menu-item-1869\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1869\"><a href=\"http://demo.boxystudio.com/garnish/slider-revolution/\">Slider Revolution</a></li>
-   <li id=\"menu-item-2130\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2130\"><a href=\"http://demo.boxystudio.com/garnish/soliloquy-slider/\">Soliloquy Slider</a></li>
-   <li id=\"menu-item-1875\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1875\"><a href=\"http://demo.boxystudio.com/garnish/no-slider/\">No Slider</a></li>
-</ul>
-</li>
-<li id=\"menu-item-1842\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1842\"><a href=\"http://demo.boxystudio.com/garnish/#\">Page Options</a>
-<ul class=\"sub-menu\">
-   <li id=\"menu-item-1860\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1860\"><a href=\"http://demo.boxystudio.com/garnish/visual-composer-page/\">Visual Composer</a></li>
-   <li id=\"menu-item-1872\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1872\"><a href=\"http://demo.boxystudio.com/garnish/left-sidebar/\">Left Sidebar</a></li>
-   <li id=\"menu-item-1871\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1871\"><a href=\"http://demo.boxystudio.com/garnish/right-sidebar/\">Right Sidebar</a></li>
-   <li id=\"menu-item-1882\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1882\"><a href=\"http://demo.boxystudio.com/garnish/envira-gallery-example/\">Envira Gallery</a></li>
-</ul>
-</li>
-<li id=\"menu-item-1873\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1873\"><a href=\"http://demo.boxystudio.com/garnish/menu-builder/\">Menu Builder</a>
-<ul class=\"sub-menu\">
-   <li id=\"menu-item-1874\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1874\"><a href=\"http://demo.boxystudio.com/garnish/menu-builder/\">Boxy’s Menu Builder</a></li>
-   <li id=\"menu-item-1867\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1867\"><a href=\"http://demo.boxystudio.com/garnish/espresso-menus/coffees/\">Coffee Menu w/Images</a></li>
-   <li id=\"menu-item-1866\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1866\"><a href=\"http://demo.boxystudio.com/garnish/espresso-menus/lunch-menu/\">Two Menus on Page</a></li>
-   <li id=\"menu-item-1977\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1977\"><a href=\"http://demo.boxystudio.com/garnish/no-price-menu-clean/\">No Prices Menu</a></li>
-</ul>
-</li>
-<li id=\"menu-item-1843\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1843\"><a href=\"http://demo.boxystudio.com/garnish/events/\">Events</a>
-<ul class=\"sub-menu\">
-   <li id=\"menu-item-1845\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1845\"><a href=\"http://demo.boxystudio.com/garnish/events/upcoming/\">List View</a></li>
-   <li id=\"menu-item-1844\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1844\"><a href=\"http://demo.boxystudio.com/garnish/events/month/\">Month View</a></li>
-   <li id=\"menu-item-1846\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1846\"><a href=\"http://demo.boxystudio.com/garnish/events/week/\">Week View</a></li>
-   <li id=\"menu-item-1847\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1847\"><a href=\"http://demo.boxystudio.com/garnish/events/today/\">Today View</a></li>
-   <li id=\"menu-item-1848\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1848\"><a href=\"http://demo.boxystudio.com/garnish/events/map/\">Map View</a></li>
-   <li id=\"menu-item-1849\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1849\"><a href=\"http://demo.boxystudio.com/garnish/events/photo/\">Photo View</a></li>
-   <li id=\"menu-item-1856\" class=\"menu-item menu-item-type-taxonomy menu-item-object-tribe_events_cat menu-item-1856\"><a href=\"http://demo.boxystudio.com/garnish/events/category/events/\">Event Category</a></li>
-</ul>
-</li>
-<li id=\"menu-item-1868\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1868\"><a href=\"http://demo.boxystudio.com/garnish/shop/\">WooCommerce</a>
-<ul class=\"sub-menu\">
-   <li id=\"menu-item-1881\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1881\"><a href=\"http://demo.boxystudio.com/garnish/shop/\">Store Home</a></li>
-   <li id=\"menu-item-1880\" class=\"menu-item menu-item-type-post_type menu-item-object-product menu-item-1880\"><a href=\"http://demo.boxystudio.com/garnish/shop/mocha-tesora/\">Product Page</a></li>
-   <li id=\"menu-item-1853\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1853\"><a href=\"http://demo.boxystudio.com/garnish/cart/\">Cart</a></li>
-   <li id=\"menu-item-1854\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1854\"><a href=\"http://demo.boxystudio.com/garnish/checkout/\">Checkout</a></li>
-   <li id=\"menu-item-1855\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1855\"><a href=\"http://demo.boxystudio.com/garnish/my-account/\">My Account</a></li>
-</ul>
-</li>
-<li id=\"menu-item-1863\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1863\"><a href=\"http://demo.boxystudio.com/garnish/blog/\">The Garnish Blog</a>
-<ul class=\"sub-menu\">
-   <li id=\"menu-item-1864\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1864\"><a href=\"http://demo.boxystudio.com/garnish/blog/\">Blog Posts</a></li>
-   <li id=\"menu-item-1876\" class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1876\"><a href=\"http://demo.boxystudio.com/garnish/blog/2013/11/23/healthy-dinners-in-40-minutes-or-less/\">Normal Post</a></li>
-   <li id=\"menu-item-1879\" class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1879\"><a href=\"http://demo.boxystudio.com/garnish/blog/2013/10/25/this-is-an-espresso-gallery/\">Gallery Post</a></li>
-   <li id=\"menu-item-1877\" class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1877\"><a href=\"http://demo.boxystudio.com/garnish/blog/2013/10/25/this-is-a-video-post/\">Video Post</a></li>
-   <li id=\"menu-item-1878\" class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1878\"><a href=\"http://demo.boxystudio.com/garnish/blog/2013/10/25/this-is-an-audio-post/\">Audio Post</a></li>
-</ul>
-</li>
-<li id=\"menu-item-1850\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1850\"><a href=\"http://demo.boxystudio.com/garnish/#\">Forms</a>
-<ul class=\"sub-menu\">
-   <li id=\"menu-item-1865\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1865\"><a href=\"http://demo.boxystudio.com/garnish/gravity-form/\">Gravity Form</a></li>
-   <li id=\"menu-item-1858\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1858\"><a href=\"http://demo.boxystudio.com/garnish/contact-form-7/\">Contact Form 7</a></li>
-</ul>
-</li>
-<li id=\"menu-item-1851\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1851\"><a href=\"http://themeforest.net/item/garnish-a-wordpress-theme-for-restaurants/7985827/?ref=boxystudio\">Purchase</a></li>
-</ul><div id=\"mobile-cart\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class=\"fa fa-shopping-cart\"></i>&nbsp;&nbsp;<a class=\"cart-contents\" href=\"http://demo.boxystudio.com/garnish/cart/\" title=\"View your shopping cart\">0 items - <span class=\"amount\">\$0.00</span></a></div></div>
+    <div class=\"mobile-nav-wrapper\">
+        <div id=\"mobileSlickNav\">
+            <div class=\"slicknav_menu\">
+                <ul class=\"slicknav_nav slicknav_hidden\" aria-hidden=\"true\" role=\"menu\" style=\"display: none;\">
+                    <li class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009 slicknav_collapsed slicknav_parent\">
+                        <a href=\"http://demo.boxystudio.com/garnish/#\" role=\"menuitem\" aria-haspopup=\"true\" tabindex=\"-1\" class=\"slicknav_item\" style=\"outline: none;\">
+                            <a href=\"./Garnish_files/Garnish.htm\">Homepage Examples</a>
+                            <span class=\"slicknav_arrow\">►</span>
+                        </a>
+                        <ul class=\"sub-menu slicknav_hidden\" role=\"menu\" aria-hidden=\"true\" style=\"display: none;\">
+                            <li class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item menu-item-1862\">
+                                <a href=\"./Garnish_files/Garnish.htm\" role=\"menuitem\" tabindex=\"-1\">Garnish Slider</a>
+                            </li>
+                            <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1869\">
+                                <a href=\"http://demo.boxystudio.com/garnish/slider-revolution/\" role=\"menuitem\" tabindex=\"-1\">Slider Revolution</a>
+                            </li>
+                            <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2130\">
+                                <a href=\"http://demo.boxystudio.com/garnish/soliloquy-slider/\" role=\"menuitem\" tabindex=\"-1\">Soliloquy Slider</a>
+                            </li>
+                            <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1875\">
+                                <a href=\"http://demo.boxystudio.com/garnish/no-slider/\" role=\"menuitem\" tabindex=\"-1\">No Slider</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1851\">
+                        <a href=\"http://themeforest.net/item/garnish-a-wordpress-theme-for-restaurants/7985827/?ref=boxystudio\" role=\"menuitem\" tabindex=\"-1\">Purchase</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id=\"mobileNav\" class=\"menu\">
+            <li id=\"menu-item-2009\" class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009\">
+                <a href=\"./Garnish_files/Garnish.htm\">Homepage Examples</a>
+                <ul class=\"sub-menu\">
+                    <li id=\"menu-item-1862\" class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item menu-item-1862\">
+                        <a href=\"./Garnish_files/Garnish.htm\">Garnish Slider</a>
+                    </li>
+                    <li id=\"menu-item-1869\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1869\">
+                        <a href=\"http://demo.boxystudio.com/garnish/slider-revolution/\">Slider Revolution</a>
+                    </li>
+                    <li id=\"menu-item-2130\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2130\">
+                        <a href=\"http://demo.boxystudio.com/garnish/soliloquy-slider/\">Soliloquy Slider</a>
+                    </li>
+                    <li id=\"menu-item-1875\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1875\">
+                        <li id=\"menu-item-1862\" class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item menu-item-1862\">
+                            <a href=\"./Garnish_files/Garnish.htm\">Garnish Slider</a>
+                        </li>
+                        <a href=\"http://demo.boxystudio.com/garnish/no-slider/\">No Slider</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div id=\"mobile-cart\">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class=\"fa fa-shopping-cart\"></i>&nbsp;&nbsp;<a class=\"cart-contents\" href=\"http://demo.boxystudio.com/garnish/cart/\" title=\"View your shopping cart\">0 items - <span class=\"amount\">\$0.00</span></a>
+        </div>
+    </div>
     <nav class=\"shell fixed\">
-    
-      <ul id=\"menu-main-menu\" class=\"menu\"><li class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009\"><a href=\"./Garnish_files/Garnish.htm\" class=\"\">Homepage Examples</a>
-<section class=\"dropdown\" style=\"opacity: 0; display: none;\"><ul>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item menu-item-1862\"><a href=\"./Garnish_files/Garnish.htm\" class=\"\">Garnish Slider</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1869\"><a href=\"http://demo.boxystudio.com/garnish/slider-revolution/\" class=\"\">Slider Revolution</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2130\"><a href=\"http://demo.boxystudio.com/garnish/soliloquy-slider/\" class=\"\">Soliloquy Slider</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1875\"><a href=\"http://demo.boxystudio.com/garnish/no-slider/\" class=\"\">No Slider</a></li>
-</ul></section>
-</li>
-<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1842\"><a href=\"http://demo.boxystudio.com/garnish/#\" class=\"\">Page Options</a>
-<section class=\"dropdown\" style=\"opacity: 0; display: none;\"><ul>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1860\"><a href=\"http://demo.boxystudio.com/garnish/visual-composer-page/\" class=\"\">Visual Composer</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1872\"><a href=\"http://demo.boxystudio.com/garnish/left-sidebar/\" class=\"\">Left Sidebar</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1871\"><a href=\"http://demo.boxystudio.com/garnish/right-sidebar/\" class=\"\">Right Sidebar</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1882\"><a href=\"http://demo.boxystudio.com/garnish/envira-gallery-example/\" class=\"\">Envira Gallery</a></li>
-</ul></section>
-</li>
-<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1873\"><a href=\"http://demo.boxystudio.com/garnish/menu-builder/\" class=\"\">Menu Builder</a>
-<section class=\"dropdown\" style=\"opacity: 0; display: none;\"><ul>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1874\"><a href=\"http://demo.boxystudio.com/garnish/menu-builder/\" class=\"\">Boxy’s Menu Builder</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1867\"><a href=\"http://demo.boxystudio.com/garnish/espresso-menus/coffees/\" class=\"\">Coffee Menu w/Images</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1866\"><a href=\"http://demo.boxystudio.com/garnish/espresso-menus/lunch-menu/\" class=\"\">Two Menus on Page</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1977\"><a href=\"http://demo.boxystudio.com/garnish/no-price-menu-clean/\" class=\"\">No Prices Menu</a></li>
-</ul></section>
-</li>
-<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1843\"><a href=\"http://demo.boxystudio.com/garnish/events/\" class=\"\">Events</a>
-<section class=\"dropdown\" style=\"opacity: 0; display: none;\"><ul>
-   <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1845\"><a href=\"http://demo.boxystudio.com/garnish/events/upcoming/\" class=\"\">List View</a></li>
-   <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1844\"><a href=\"http://demo.boxystudio.com/garnish/events/month/\" class=\"\">Month View</a></li>
-   <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1846\"><a href=\"http://demo.boxystudio.com/garnish/events/week/\" class=\"\">Week View</a></li>
-   <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1847\"><a href=\"http://demo.boxystudio.com/garnish/events/today/\" class=\"\">Today View</a></li>
-   <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1848\"><a href=\"http://demo.boxystudio.com/garnish/events/map/\" class=\"\">Map View</a></li>
-   <li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1849\"><a href=\"http://demo.boxystudio.com/garnish/events/photo/\" class=\"\">Photo View</a></li>
-   <li class=\"menu-item menu-item-type-taxonomy menu-item-object-tribe_events_cat menu-item-1856\"><a href=\"http://demo.boxystudio.com/garnish/events/category/events/\" class=\"\">Event Category</a></li>
-</ul></section>
-</li>
-<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1868\"><a href=\"http://demo.boxystudio.com/garnish/shop/\">WooCommerce</a>
-<section class=\"dropdown\" style=\"opacity: 0;\"><ul>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1881\"><a href=\"http://demo.boxystudio.com/garnish/shop/\">Store Home</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-product menu-item-1880\"><a href=\"http://demo.boxystudio.com/garnish/shop/mocha-tesora/\">Product Page</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1853\"><a href=\"http://demo.boxystudio.com/garnish/cart/\">Cart</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1854\"><a href=\"http://demo.boxystudio.com/garnish/checkout/\">Checkout</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1855\"><a href=\"http://demo.boxystudio.com/garnish/my-account/\">My Account</a></li>
-</ul></section>
-</li>
-<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1863\"><a href=\"http://demo.boxystudio.com/garnish/blog/\" class=\"\">The Garnish Blog</a>
-<section class=\"dropdown\" style=\"opacity: 0; display: none;\"><ul>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1864\"><a href=\"http://demo.boxystudio.com/garnish/blog/\" class=\"\">Blog Posts</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1876\"><a href=\"http://demo.boxystudio.com/garnish/blog/2013/11/23/healthy-dinners-in-40-minutes-or-less/\" class=\"\">Normal Post</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1879\"><a href=\"http://demo.boxystudio.com/garnish/blog/2013/10/25/this-is-an-espresso-gallery/\" class=\"\">Gallery Post</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1877\"><a href=\"http://demo.boxystudio.com/garnish/blog/2013/10/25/this-is-a-video-post/\" class=\"\">Video Post</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-1878\"><a href=\"http://demo.boxystudio.com/garnish/blog/2013/10/25/this-is-an-audio-post/\" class=\"\">Audio Post</a></li>
-</ul></section>
-</li>
-<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1850\"><a href=\"http://demo.boxystudio.com/garnish/#\">Forms</a>
-<section class=\"dropdown\" style=\"opacity: 0;\"><ul>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1865\"><a href=\"http://demo.boxystudio.com/garnish/gravity-form/\">Gravity Form</a></li>
-   <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1858\"><a href=\"http://demo.boxystudio.com/garnish/contact-form-7/\">Contact Form 7</a></li>
-</ul></section>
-</li>
-<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1851\"><a href=\"http://themeforest.net/item/garnish-a-wordpress-theme-for-restaurants/7985827/?ref=boxystudio\">Purchase</a></li>
-</ul>         
+        <ul id=\"menu-main-menu\" class=\"menu\">
+            <li class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009\"><a href=\"./Garnish_files/Garnish.htm\" class=\"\">Homepage Examples</a>
+                <section class=\"dropdown\" style=\"opacity: 0; display: none;\">
+                    <ul>
+                        <li class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item menu-item-1862\"><a href=\"./Garnish_files/Garnish.htm\" class=\"\">Garnish Slider</a></li>
+                        <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1869\"><a href=\"http://demo.boxystudio.com/garnish/slider-revolution/\" class=\"\">Slider Revolution</a></li>
+                        <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2130\"><a href=\"http://demo.boxystudio.com/garnish/soliloquy-slider/\" class=\"\">Soliloquy Slider</a></li>
+                        <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1875\"><a href=\"http://demo.boxystudio.com/garnish/no-slider/\" class=\"\">No Slider</a></li>
+                    </ul>
+                </section>
+            </li>
+        </ul>         
     </nav>
-      <section id=\"slider\" style=\"height:576px;\" class=\"shell clearfix garnish\">
-         ";
-        // line 420
+        <section id=\"slider\" style=\"height:576px;\" class=\"shell clearfix garnish\">
+            ";
+        // line 150
         $this->displayBlock('alerts', $context, $blocks);
-        // line 423
-        echo "         ";
+        // line 153
+        echo "            ";
         $this->displayBlock('content', $context, $blocks);
-        // line 425
-        echo "      </section>
+        // line 155
+        echo "        </section>
       
-      <div class=\"shell clearfix\">
-         <section id=\"bottom-bar\">
-         
-                        
-               <p class=\"left address-phone\">
-                  Copyright ©2014 FoodShare                 </p>           
-            <p class=\"right address-phone\"><i class=\"fa fa-map-marker\"></i>&nbsp;21 - 23 Rue pasteur&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class=\"fa fa-phone\"></i>&nbsp;42 42 42 42 42</p>                       
-         </section>
-      </div><script>var sticky_nav = true;</script><script type=\"text/javascript\">var templateDir = \"http://demo.boxystudio.com/garnish/wp-content/themes/garnish\";</script><script type=\"text/javascript\" src=\"./Garnish_files/comment-reply.min.js\"></script>
+        <div class=\"shell clearfix\">
+            <section id=\"bottom-bar\">
+                               
+                <p class=\"left address-phone\">
+                    Copyright ©2014 FoodShare
+                </p>
+                <p class=\"right address-phone\">
+                    <i class=\"fa fa-map-marker\"></i>&nbsp;21 - 23 Rue pasteur&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class=\"fa fa-phone\"></i>&nbsp;42 42 42 42 42
+                </p>
+            </section>
+        </div>
+        
+        <script>var sticky_nav = true;</script><script type=\"text/javascript\">var templateDir = \"http://demo.boxystudio.com/garnish/wp-content/themes/garnish\";</script><script type=\"text/javascript\" src=\"./Garnish_files/comment-reply.min.js\"></script>
 <script type=\"text/javascript\" src=\"./Garnish_files/jquery.form.min.js\"></script>
 <script type=\"text/javascript\">
 /* <![CDATA[ */
@@ -500,21 +234,21 @@ var wc_cart_fragments_params = {\"ajax_url\":\"\\/garnish\\/wp-admin\\/admin-aja
 </body></html>";
     }
 
-    // line 420
+    // line 150
     public function block_alerts($context, array $blocks = array())
     {
-        // line 421
-        echo "            ";
+        // line 151
+        echo "                ";
         $this->env->loadTemplate("elements/alerts.html.twig")->display($context);
-        // line 422
-        echo "         ";
+        // line 152
+        echo "            ";
     }
 
-    // line 423
+    // line 153
     public function block_content($context, array $blocks = array())
     {
-        // line 424
-        echo "         ";
+        // line 154
+        echo "            ";
     }
 
     public function getTemplateName()
@@ -524,6 +258,6 @@ var wc_cart_fragments_params = {\"ajax_url\":\"\\/garnish\\/wp-admin\\/admin-aja
 
     public function getDebugInfo()
     {
-        return array (  517 => 424,  514 => 423,  510 => 422,  507 => 421,  504 => 420,  447 => 425,  444 => 423,  442 => 420,  21 => 1,);
+        return array (  251 => 154,  248 => 153,  244 => 152,  241 => 151,  238 => 150,  177 => 155,  174 => 153,  172 => 150,  21 => 1,);
     }
 }
