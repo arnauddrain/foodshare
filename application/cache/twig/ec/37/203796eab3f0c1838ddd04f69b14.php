@@ -10,7 +10,6 @@ class __TwigTemplate_ec37203796eab3f0c1838ddd04f69b14 extends Twig_Template
         $this->parent = $this->env->loadTemplate("templates/welcome.html.twig");
 
         $this->blocks = array(
-            'content' => array($this, 'block_content'),
         );
     }
 
@@ -22,16 +21,6 @@ class __TwigTemplate_ec37203796eab3f0c1838ddd04f69b14 extends Twig_Template
     protected function doDisplay(array $context, array $blocks = array())
     {
         $this->parent->display($context, array_merge($this->blocks, $blocks));
-    }
-
-    // line 3
-    public function block_content($context, array $blocks = array())
-    {
-        // line 4
-        echo "
-<p class=\"lead\">MANGER</p>
-
-";
     }
 
     public function getTemplateName()
@@ -46,6 +35,6 @@ class __TwigTemplate_ec37203796eab3f0c1838ddd04f69b14 extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  31 => 4,  28 => 3,);
+        return array ();
     }
 }
