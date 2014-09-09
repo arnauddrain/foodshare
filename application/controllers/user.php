@@ -50,7 +50,6 @@ class User extends APP_Controller {
 		}
             }
             $this->show_page('user/registration');
-            redirect('/');
 	}
 	
 	public function login()
