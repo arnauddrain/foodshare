@@ -7,7 +7,7 @@ class User_model extends CI_Model {
 	
 	public function add($datas)
 	{
-		$this->db->insert('users', $datas);
+		return $this->db->insert('users', $datas);
 	}
 	
 	public function get($datas = array())
