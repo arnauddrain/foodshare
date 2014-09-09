@@ -74,13 +74,14 @@
 
 
 <body class="home page page-id-1852 page-template-default  boxed wpb-js-composer js-comp-ver-4.2.3 vc_responsive tribe-theme-garnish page-template-page-php sticky-nav">
-   <header>
-       <center>
-           <img style="padding-top: 20px;" src="./img/foodShare2.png">
-       </center>
-   </header>
+    <header>
+        <center>
+            <img style="padding-top: 20px;" src="./img/foodShare2.png">
+        </center>
+    </header>
     
     <div class="mobile-nav-wrapper">
+        {% if user %}
         <div id="mobileSlickNav">
             <div class="slicknav_menu">
                 <ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
@@ -135,21 +136,38 @@
         <div id="mobile-cart">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<a class="cart-contents" href="http://demo.boxystudio.com/garnish/cart/" title="View your shopping cart">0 items - <span class="amount">$0.00</span></a>
         </div>
+        {% else %}
+        {% endif %}
     </div>
     
     <nav class="shell fixed">
-        <ul id="menu-main-menu" class="menu">
-            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009"><a href="./Garnish_files/Garnish.htm" class="">Homepage Examples</a>
-                <section class="dropdown" style="opacity: 0; display: none;">
-                    <ul>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item menu-item-1862"><a href="./Garnish_files/Garnish.htm" class="">Garnish Slider</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1869"><a href="http://demo.boxystudio.com/garnish/slider-revolution/" class="">Slider Revolution</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2130"><a href="http://demo.boxystudio.com/garnish/soliloquy-slider/" class="">Soliloquy Slider</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1875"><a href="http://demo.boxystudio.com/garnish/no-slider/" class="">No Slider</a></li>
-                    </ul>
-                </section>
-            </li>
-        </ul>         
+        {% if user %}
+            <ul id="menu-main-menu" class="menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009"><a href="./Garnish_files/Garnish.htm" class="">Homepage Examples</a>
+                    <section class="dropdown" style="opacity: 0; display: none;">
+                        <ul>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item menu-item-1862"><a href="./Garnish_files/Garnish.htm" class="">Garnish Slider</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1869"><a href="http://demo.boxystudio.com/garnish/slider-revolution/" class="">Slider Revolution</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2130"><a href="http://demo.boxystudio.com/garnish/soliloquy-slider/" class="">Soliloquy Slider</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1875"><a href="http://demo.boxystudio.com/garnish/no-slider/" class="">No Slider</a></li>
+                        </ul>
+                    </section>
+                </li>
+            </ul>    
+        {% else %}
+            <ul>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009"><a href="./Garnish_files/Garnish.htm" class="">Inscription</a>
+                    <section class="dropdown" style="opacity: 0; display: none;">
+                        <ul>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item menu-item-1862"><a href="./Garnish_files/Garnish.htm" class="">Garnish Slider</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1869"><a href="http://demo.boxystudio.com/garnish/slider-revolution/" class="">Slider Revolution</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2130"><a href="http://demo.boxystudio.com/garnish/soliloquy-slider/" class="">Soliloquy Slider</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1875"><a href="http://demo.boxystudio.com/garnish/no-slider/" class="">No Slider</a></li>
+                        </ul>
+                    </section>
+                </li>
+            </ul>
+        {% endif %}
     </nav>
     
         

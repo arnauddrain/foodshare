@@ -94,14 +94,19 @@ class __TwigTemplate_eb707a4cad621b92cc45abddd27a8007 extends Twig_Template
 
 
 <body class=\"home page page-id-1852 page-template-default  boxed wpb-js-composer js-comp-ver-4.2.3 vc_responsive tribe-theme-garnish page-template-page-php sticky-nav\">
-   <header>
-       <center>
-           <img style=\"padding-top: 20px;\" src=\"./img/foodShare2.png\">
-       </center>
-   </header>
+    <header>
+        <center>
+            <img style=\"padding-top: 20px;\" src=\"./img/foodShare2.png\">
+        </center>
+    </header>
     
     <div class=\"mobile-nav-wrapper\">
-        <div id=\"mobileSlickNav\">
+        ";
+        // line 84
+        if (isset($context["user"])) { $_user_ = $context["user"]; } else { $_user_ = null; }
+        if ($_user_) {
+            // line 85
+            echo "        <div id=\"mobileSlickNav\">
             <div class=\"slicknav_menu\">
                 <ul class=\"slicknav_nav slicknav_hidden\" aria-hidden=\"true\" role=\"menu\" style=\"display: none;\">
                     <li class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009 slicknav_collapsed slicknav_parent\">
@@ -155,31 +160,60 @@ class __TwigTemplate_eb707a4cad621b92cc45abddd27a8007 extends Twig_Template
         <div id=\"mobile-cart\">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class=\"fa fa-shopping-cart\"></i>&nbsp;&nbsp;<a class=\"cart-contents\" href=\"http://demo.boxystudio.com/garnish/cart/\" title=\"View your shopping cart\">0 items - <span class=\"amount\">\$0.00</span></a>
         </div>
-    </div>
+        ";
+        } else {
+            // line 140
+            echo "        ";
+        }
+        // line 141
+        echo "    </div>
     
     <nav class=\"shell fixed\">
-        <ul id=\"menu-main-menu\" class=\"menu\">
-            <li class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009\"><a href=\"./Garnish_files/Garnish.htm\" class=\"\">Homepage Examples</a>
-                <section class=\"dropdown\" style=\"opacity: 0; display: none;\">
-                    <ul>
-                        <li class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item menu-item-1862\"><a href=\"./Garnish_files/Garnish.htm\" class=\"\">Garnish Slider</a></li>
-                        <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1869\"><a href=\"http://demo.boxystudio.com/garnish/slider-revolution/\" class=\"\">Slider Revolution</a></li>
-                        <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2130\"><a href=\"http://demo.boxystudio.com/garnish/soliloquy-slider/\" class=\"\">Soliloquy Slider</a></li>
-                        <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1875\"><a href=\"http://demo.boxystudio.com/garnish/no-slider/\" class=\"\">No Slider</a></li>
-                    </ul>
-                </section>
-            </li>
-        </ul>         
-    </nav>
+        ";
+        // line 144
+        if (isset($context["user"])) { $_user_ = $context["user"]; } else { $_user_ = null; }
+        if ($_user_) {
+            // line 145
+            echo "            <ul id=\"menu-main-menu\" class=\"menu\">
+                <li class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009\"><a href=\"./Garnish_files/Garnish.htm\" class=\"\">Homepage Examples</a>
+                    <section class=\"dropdown\" style=\"opacity: 0; display: none;\">
+                        <ul>
+                            <li class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item menu-item-1862\"><a href=\"./Garnish_files/Garnish.htm\" class=\"\">Garnish Slider</a></li>
+                            <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1869\"><a href=\"http://demo.boxystudio.com/garnish/slider-revolution/\" class=\"\">Slider Revolution</a></li>
+                            <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2130\"><a href=\"http://demo.boxystudio.com/garnish/soliloquy-slider/\" class=\"\">Soliloquy Slider</a></li>
+                            <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1875\"><a href=\"http://demo.boxystudio.com/garnish/no-slider/\" class=\"\">No Slider</a></li>
+                        </ul>
+                    </section>
+                </li>
+            </ul>    
+        ";
+        } else {
+            // line 158
+            echo "            <ul>
+                <li class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009\"><a href=\"./Garnish_files/Garnish.htm\" class=\"\">Inscription</a>
+                    <section class=\"dropdown\" style=\"opacity: 0; display: none;\">
+                        <ul>
+                            <li class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item menu-item-1862\"><a href=\"./Garnish_files/Garnish.htm\" class=\"\">Garnish Slider</a></li>
+                            <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1869\"><a href=\"http://demo.boxystudio.com/garnish/slider-revolution/\" class=\"\">Slider Revolution</a></li>
+                            <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-2130\"><a href=\"http://demo.boxystudio.com/garnish/soliloquy-slider/\" class=\"\">Soliloquy Slider</a></li>
+                            <li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-1875\"><a href=\"http://demo.boxystudio.com/garnish/no-slider/\" class=\"\">No Slider</a></li>
+                        </ul>
+                    </section>
+                </li>
+            </ul>
+        ";
+        }
+        // line 171
+        echo "    </nav>
     
         
         ";
-        // line 156
+        // line 174
         $this->displayBlock('alerts', $context, $blocks);
-        // line 159
+        // line 177
         echo "        ";
         $this->displayBlock('content', $context, $blocks);
-        // line 161
+        // line 179
         echo "        
       
         <div class=\"shell clearfix\">
@@ -240,20 +274,20 @@ var wc_cart_fragments_params = {\"ajax_url\":\"\\/garnish\\/wp-admin\\/admin-aja
 </body></html>";
     }
 
-    // line 156
+    // line 174
     public function block_alerts($context, array $blocks = array())
     {
-        // line 157
+        // line 175
         echo "            ";
         $this->env->loadTemplate("elements/alerts.html.twig")->display($context);
-        // line 158
+        // line 176
         echo "        ";
     }
 
-    // line 159
+    // line 177
     public function block_content($context, array $blocks = array())
     {
-        // line 160
+        // line 178
         echo "        ";
     }
 
@@ -262,8 +296,13 @@ var wc_cart_fragments_params = {\"ajax_url\":\"\\/garnish\\/wp-admin\\/admin-aja
         return "templates/welcome.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  257 => 160,  254 => 159,  250 => 158,  247 => 157,  244 => 156,  183 => 161,  180 => 159,  178 => 156,  21 => 1,  31 => 3,  28 => 2,);
+        return array (  291 => 178,  288 => 177,  284 => 176,  281 => 175,  278 => 174,  217 => 179,  214 => 177,  212 => 174,  207 => 171,  192 => 158,  177 => 145,  174 => 144,  169 => 141,  166 => 140,  109 => 85,  106 => 84,  21 => 1,);
     }
 }

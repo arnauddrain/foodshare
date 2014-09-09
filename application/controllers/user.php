@@ -28,6 +28,8 @@ class User extends APP_Controller {
 	
 	public function registration()
 	{
+            if ($this->input->post('pseudo'))
+            {
 		$pseudo = $this->input->post('pseudo');
 		$password = $this->input->post('password');
 		$email = $this->input->post('email');
@@ -44,8 +46,11 @@ class User extends APP_Controller {
 			$user_infos = $this->user_model->get($datas);
 			$this->session->set_userdata(array('user' => $user_infos));
 			$this->alerts->add('Inscription réussie', 'success');
+                        redirect('/');
 		}
-		redirect('/');
+            }
+            $this->show_page('user/registration');
+            redirect('/');
 	}
 	
 	public function login()
