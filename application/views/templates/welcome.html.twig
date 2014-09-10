@@ -73,75 +73,31 @@
 
 
 <body class="home page page-id-1852 page-template-default  boxed wpb-js-composer js-comp-ver-4.2.3 vc_responsive tribe-theme-garnish page-template-page-php sticky-nav">
-    <header>
-        <center>
-            <a href="/"><img style="padding-top: 20px;" src="/img/foodShare2.png"></a>
-        </center>
-    </header>
     
-    <div class="mobile-nav-wrapper">
-        {% if user %}
-            <div id="mobileSlickNav">
-            </div>
-            <ul id="mobileNav" class="menu">
-                <li id="menu-item-2009" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
-                    <a href="/user/logout" data-toggle="modal" data-target="#connexion" class="">Deconnexion</a>
-                </li>      
-            </ul>
-        {% else %}
-            <div id="mobileSlickNav">
-            </div>
-            <ul id="mobileNav" class="menu">
-                <li id="menu-item-2009" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
-                    <a href="#" data-toggle="modal" data-target="#connexion" class="">Connexion</a>
-                </li>
-                <li id="menu-item-2009" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
-                    <a href="#" data-toggle="modal" data-target="#register" class="">Inscription</a>
-                </li>       
-            </ul>
-        {% endif %}
-    </div>
     
-    <nav class="shell fixed">
-        {% if user %}
-            <ul id="menu-main-menu" class="menu">
-                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
-                    <a href="/user/logout" class="">Deconnexion</a>
-                </li>
-            </ul>    
-        {% else %}
-            <ul>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
-                    <a href="#" data-toggle="modal" data-target="#register" class="">Inscription</a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
-                    <a href="#" data-toggle="modal" data-target="#connexion" class="">Connexion</a>
-                </li>
-            </ul>
-        {% endif %}
-    </nav>
+    {% block header %}
+        {% include 'elements/header.html.twig' %}
+    {% endblock %}
+    
+    {% block menu %}
+        {% include 'elements/menu.html.twig' %}
+    {% endblock %} 
     
     {% block modal %}
         {% include 'elements/modal.html.twig' %}
     {% endblock %}   
+    
     {% block alerts %}
         {% include 'elements/alerts.html.twig' %}
     {% endblock %}
+    
     {% block content %}
     {% endblock %}
         
-      
-        <div class="shell clearfix">
-            <section id="bottom-bar">
-                               
-                <p class="left address-phone">
-                    Copyright ©2014 FoodShare
-                </p>
-                <p class="right address-phone">
-                    <i class="fa fa-map-marker"></i>&nbsp;21 - 23 Rue pasteur&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-phone"></i>&nbsp;42 42 42 42 42
-                </p>
-            </section>
-        </div>
+    {% block footer %}
+        {% include 'elements/footer.html.twig' %}
+    {% endblock %} 
+
         
         <script>var sticky_nav = true;</script><script type="text/javascript">var templateDir = "http://demo.boxystudio.com/garnish/wp-content/themes/garnish";</script><script type="text/javascript" src="/Garnish_files/comment-reply.min.js"></script>
 <script type="text/javascript" src="/Garnish_files/jquery.form.min.js"></script>
