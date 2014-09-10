@@ -1,0 +1,99 @@
+{% extends 'templates/welcome.html.twig' %}
+{% block content %}
+    <style>
+        #map-canvas img {
+            max-width: initial;
+        }
+    </style>
+        
+    <section id="slider" class="shell clearfix garnish" style="padding: 20px;">
+        <h2 class="centered">
+            <span>Faire une reservation</span>
+        </h2>
+        <div id="map-canvas" style="height: 800px;">
+            <img src="/img/ajax-loader.gif">
+        </div>
+        <div>
+            <table class="table table-hover list-restaurants">
+                <tr>
+                    <th>#</th>
+                    <th>Nom</th>
+                    <th>Adresse</th>
+                    <th>Type</th>
+                    <th>Reserver</th>
+                </tr>
+            </table>
+        </div>
+    </section>    
+    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?senson=true"></script>
+    <script type="text/javascript">
+        var tab = [
+            {x: 48.855, y: 2.35, title: "Maxime", address: "adresse", type: "Sandwichs"},
+            {x: 48.845, y: 2.40, title: "Tabia", address: "adresse", type: "Indien"},
+            {x: 48.88, y: 2.44, title: "Paul et Sandra", address: "adresse", type: "Sandwichs / plats frais"},
+            {x: 48.87, y: 2.32, title: "Fatima", address: "adresse", type: "Chinois"},
+            {x: 48.8161594, y: 2.364493400000015, title: "Tang", address: "21 Rue Pasteur, 94270 le Kremlin Bicetre", type: "Chien"},
+            {x: 48.868, y: 2.30, title: "Patrick Sebastien", address: "adresse", type: "Repas en musique"}
+        ];
+
+        function addInTab(i) {
+            var line = $('<tr>').appendTo($('.list-restaurants'));
+            $('<td>').appendTo(line).append(i + 1);
+            $('<td>').appendTo(line).append(tab[i].title);
+            $('<td>').appendTo(line).append(tab[i].address);
+            $('<td>').appendTo(line).append(tab[i].type);
+            $('<td>').appendTo(line).append($('<a>', {class: "btn btn-primary", href:"/demo/book"}).append('Reserver'));
+        }
+    
+        function addMarker(map, i) {
+            addInTab(i);
+            var myLatlng = new google.maps.LatLng(tab[i].x, tab[i].y);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: tab[i].title
+            });
+            marker.setAnimation(google.maps.Animation.DROP);
+            var contentString = '<div id="content">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<h1 id="firstHeading" class="firstHeading">' + tab[i].title + '</h1>'+
+                '<div id="bodyContent">'+
+                '<p>' + tab[i].address + '</p>'+
+                '<p>' + tab[i].type + '</p>'+
+                '<a href="/demo/book"><b>Réserver</b></a>' +
+                '</div>'+
+                '</div>';
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map,marker);
+            });
+            if (i < tab.length - 1)
+                setTimeout(function () {addMarker(map, i + 1)}, 1000 / tab.length);
+        }
+        
+        function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(48.853, 2.35),
+          zoom: 13
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+
+        var myLatlng = new google.maps.LatLng(48.815, 2.363);
+        var image = 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png';
+        var marker = new google.maps.Marker({
+           position: myLatlng,
+           map: map,
+           title: 'home',
+           icon: image
+        });
+
+        addMarker(map, 0);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+{% endblock %}

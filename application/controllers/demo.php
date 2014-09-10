@@ -18,9 +18,36 @@ class Demo extends APP_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
     
+        public function __construct()
+	{
+            parent::__construct();
+            $this->load->helper('url');
+	}
+    
+        public function findBook()
+        {
+            $this->show_page('demo/findBook');
+        }
+        
 	public function book()
 	{
             $this->show_page('demo/book');
+	}
+        
+        public function myBook()
+        {
+            $this->show_page('demo/myBook');
+        }
+        
+        public function myRestaurant()
+        {
+            $this->show_page('demo/myRestaurant');
+        }
+        
+        public function doBook()
+	{
+            $this->alerts->add('Repas réservé', 'success');
+            redirect('/');
 	}
 }
 
