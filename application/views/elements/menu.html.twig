@@ -1,0 +1,41 @@
+<div class="mobile-nav-wrapper">
+    {% if user %}
+        <div id="mobileSlickNav">
+        </div>
+        <ul id="mobileNav" class="menu">
+            <li id="menu-item-2009" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
+                <a href="/user/logout" data-toggle="modal" data-target="#connexion" class="">Deconnexion</a>
+            </li>      
+        </ul>
+    {% else %}
+        <div id="mobileSlickNav">
+        </div>
+        <ul id="mobileNav" class="menu">
+            <li id="menu-item-2009" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
+                <a href="#" data-toggle="modal" data-target="#connexion" class="">Connexion</a>
+            </li>
+            <li id="menu-item-2009" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
+                <a href="#" data-toggle="modal" data-target="#register" class="">Inscription</a>
+            </li>       
+        </ul>
+    {% endif %}
+</div>
+
+<nav class="shell fixed">
+    {% if user %}
+        <ul id="menu-main-menu" class="menu">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
+                <a href="/user/logout" class="">Deconnexion</a>
+            </li>
+        </ul>    
+    {% else %}
+        <ul>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
+                <a href="#" data-toggle="modal" data-target="#register" class="">Inscription</a>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
+                <a href="#" data-toggle="modal" data-target="#connexion" class="">Connexion</a>
+            </li>
+        </ul>
+    {% endif %}
+</nav>

@@ -9,6 +9,7 @@ class User extends APP_Controller {
 	{
 		parent::__construct();
 		$this->load->model('user_model');
+                $this->load->helper('url');
 	}
 	
 	private function validate_user_infos($pseudo, $password, $email)
@@ -75,6 +76,7 @@ class User extends APP_Controller {
 	public function logout()
 	{
 		$this->session->unset_userdata('user');
+                $this->alerts->add('Deconnexion réussie', 'success');
 		redirect('/');
 	}
 	
