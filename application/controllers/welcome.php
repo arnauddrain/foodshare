@@ -20,7 +20,10 @@ class Welcome extends APP_Controller {
     
 	public function index()
 	{
-            $this->show_page('welcome/welcome');
+            if (!$this->user)
+                $this->show_page('welcome/welcome');
+            else
+                $this->show_page('user/welcome');
 	}
 }
 
