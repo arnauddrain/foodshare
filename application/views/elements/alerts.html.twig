@@ -1,17 +1,22 @@
 <div class="alerts">
-	{% if alerts is defined %}
-		{% for alert in alerts %}
-			{% if alert.type == 'error' %}
-				<div class="alert alert-dismissable alert-danger">
-					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-					{{ alert.text }}
-				</div>
-			{% else %}
-				<div class="alert alert-dismissable alert-success">
-					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-					{{ alert.text }}
-				</div>
-			{% endif %}			
-		{% endfor %}
-	{% endif %}
+        <section id="slider" class="shell clearfix garnish">
+            <div>
+                        {% if alerts is defined %}
+                            {% for alert in alerts %}
+                                    {% if alert.type == 'error' %}
+                                            <div class="alert alert-dismissable alert-danger">
+                                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                                    {{ alert.text }}
+                                            </div>
+                                    {% else %}
+                                            <div class="alert alert-dismissable alert-success">
+                                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                                    {{ alert.text }}
+                                            </div>
+                                    {% endif %}			
+                            {% endfor %}
+                    {% endif %}
+                  </div>
+        
+    </section>
 </div>
