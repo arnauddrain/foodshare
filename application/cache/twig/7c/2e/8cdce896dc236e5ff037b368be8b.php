@@ -53,10 +53,10 @@ class __TwigTemplate_7c2e8cdce896dc236e5ff037b368be8b extends Twig_Template
       <div class=\"caroufredsel_wrapper\" style=\"display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 510px; height: 781px; margin: 0px; overflow: hidden;\">
         <div class=\"image-slider\" style=\"text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 2550px; height: 781px; z-index: auto; opacity: 1;\">
           <div class=\"slide\" style=\"width: 510px;\">
-            <img src=\"./Garnish_files/image1.031a07b844-685x768.jpg\" alt=\"\" width=\"685\" id=\"image-id-3\">
+            <img src=\"/Garnish_files/image1.031a07b844-685x768.jpg\" alt=\"\" width=\"685\" id=\"image-id-3\">
           </div>
           <div class=\"slide\" style=\"width: 510px;\">
-            <img src=\"./Garnish_files/image2.72f4c6916c-685x774.jpg\" alt=\"\" width=\"685\" id=\"image-id-4\">
+            <img src=\"/Garnish_files/image2.72f4c6916c-685x774.jpg\" alt=\"\" width=\"685\" id=\"image-id-4\">
           </div>
         </div>
       </div>
@@ -67,19 +67,19 @@ class __TwigTemplate_7c2e8cdce896dc236e5ff037b368be8b extends Twig_Template
   <div class=\"inner-shell\">
     <div class=\"fblock third\">
       <h3>Have a Look at Our Menu</h3>
-      <img src=\"./Garnish_files/photodune-692505-spices-assortment-s1-260x174.jpg\">
+      <img src=\"/Garnish_files/photodune-692505-spices-assortment-s1-260x174.jpg\">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
       <a class=\"bx-btn sm iconed\" href=\"http://demo.boxystudio.com/garnish/#\"><i class=\"fa fa-cutlery\"></i>Browse Our Menu</a>
     </div>
     <div class=\"fblock third\">
       <h3>Check Our Upcoming Events</h3>
-      <img src=\"./Garnish_files/photodune-678346-calendar-m-260x174.jpg\">
+      <img src=\"/Garnish_files/photodune-678346-calendar-m-260x174.jpg\">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
       <a class=\"bx-btn sm iconed\" href=\"http://demo.boxystudio.com/garnish/#\"><i class=\"fa fa-calendar\"></i>View the Calendar</a>
     </div>
     <div class=\"fblock third\">
       <h3>Book Your Table Online</h3>
-      <img src=\"./Garnish_files/photodune-438181-people-at-a-restaurant-s-260x174.jpg\">
+      <img src=\"/Garnish_files/photodune-438181-people-at-a-restaurant-s-260x174.jpg\">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
       <a class=\"bx-btn sm iconed\" href=\"http://demo.boxystudio.com/garnish/#\"><i class=\"fa fa-coffee\"></i>Book Your Table</a>
     </div>

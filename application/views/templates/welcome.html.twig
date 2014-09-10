@@ -75,82 +75,38 @@
 <body class="home page page-id-1852 page-template-default  boxed wpb-js-composer js-comp-ver-4.2.3 vc_responsive tribe-theme-garnish page-template-page-php sticky-nav">
     <header>
         <center>
-            <img style="padding-top: 20px;" src="/img/foodShare2.png">
+            <a href="/"><img style="padding-top: 20px;" src="/img/foodShare2.png"></a>
         </center>
     </header>
     
     <div class="mobile-nav-wrapper">
         {% if user %}
-        <div id="mobileSlickNav">
-            <div class="slicknav_menu">
-                <ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009 slicknav_collapsed slicknav_parent">
-                        <a href="http://demo.boxystudio.com/garnish/#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item" style="outline: none;">
-                            <a href="/Garnish_files/Garnish.htm">Homepage Examples</a>
-                            <span class="slicknav_arrow">►</span>
-                        </a>
-                        <ul class="sub-menu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item menu-item-1862">
-                                <a href="./Garnish_files/Garnish.htm" role="menuitem" tabindex="-1">Garnish Slider</a>
-                            </li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1869">
-                                <a href="http://demo.boxystudio.com/garnish/slider-revolution/" role="menuitem" tabindex="-1">Slider Revolution</a>
-                            </li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2130">
-                                <a href="http://demo.boxystudio.com/garnish/soliloquy-slider/" role="menuitem" tabindex="-1">Soliloquy Slider</a>
-                            </li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1875">
-                                <a href="http://demo.boxystudio.com/garnish/no-slider/" role="menuitem" tabindex="-1">No Slider</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1851">
-                        <a href="http://themeforest.net/item/garnish-a-wordpress-theme-for-restaurants/7985827/?ref=boxystudio" role="menuitem" tabindex="-1">Purchase</a>
-                    </li>
-                </ul>
+            <div id="mobileSlickNav">
             </div>
-        </div>
-        <ul id="mobileNav" class="menu">
-            <li id="menu-item-2009" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
-                <a href="/Garnish_files/Garnish.htm">Homepage Examples</a>
-                <ul class="sub-menu">
-                    <li id="menu-item-1862" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item menu-item-1862">
-                        <a href="/Garnish_files/Garnish.htm">Garnish Slider</a>
-                    </li>
-                    <li id="menu-item-1869" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1869">
-                        <a href="http://demo.boxystudio.com/garnish/slider-revolution/">Slider Revolution</a>
-                    </li>
-                    <li id="menu-item-2130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2130">
-                        <a href="http://demo.boxystudio.com/garnish/soliloquy-slider/">Soliloquy Slider</a>
-                    </li>
-                    <li id="menu-item-1875" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1875">
-                        <li id="menu-item-1862" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item menu-item-1862">
-                            <a href="/Garnish_files/Garnish.htm">Garnish Slider</a>
-                        </li>
-                        <a href="http://demo.boxystudio.com/garnish/no-slider/">No Slider</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <div id="mobile-cart">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<a class="cart-contents" href="http://demo.boxystudio.com/garnish/cart/" title="View your shopping cart">0 items - <span class="amount">$0.00</span></a>
-        </div>
+            <ul id="mobileNav" class="menu">
+                <li id="menu-item-2009" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
+                    <a href="/user/logout" data-toggle="modal" data-target="#connexion" class="">Deconnexion</a>
+                </li>      
+            </ul>
         {% else %}
+            <div id="mobileSlickNav">
+            </div>
+            <ul id="mobileNav" class="menu">
+                <li id="menu-item-2009" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
+                    <a href="#" data-toggle="modal" data-target="#connexion" class="">Connexion</a>
+                </li>
+                <li id="menu-item-2009" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
+                    <a href="#" data-toggle="modal" data-target="#register" class="">Inscription</a>
+                </li>       
+            </ul>
         {% endif %}
     </div>
     
     <nav class="shell fixed">
         {% if user %}
             <ul id="menu-main-menu" class="menu">
-                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009"><a href="user/registration" class="">Homepage Examples</a>
-                    <section class="dropdown" style="opacity: 0; display: none;">
-                        <ul>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item menu-item-1862"><a href="/Garnish_files/Garnish.htm" class="">Garnish Slider</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1869"><a href="http://demo.boxystudio.com/garnish/slider-revolution/" class="">Slider Revolution</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2130"><a href="http://demo.boxystudio.com/garnish/soliloquy-slider/" class="">Soliloquy Slider</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1875"><a href="http://demo.boxystudio.com/garnish/no-slider/" class="">No Slider</a></li>
-                        </ul>
-                    </section>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1852 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2009">
+                    <a href="/user/logout" class="">Deconnexion</a>
                 </li>
             </ul>    
         {% else %}
@@ -165,69 +121,14 @@
         {% endif %}
     </nav>
     
-    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              <h4 class="modal-title" id="myModalLabel">Inscription</h4>
-            </div>
-            <div class="modal-body">
-              <form role="form">
-                <div class="form-group">
-                  <label for="pseudo">Pseudo</label>
-                  <input type="text" class="form-control" id="Pseudo" placeholder="Pseudo">
-                </div>
-                <div class="form-group">
-                  <label for="password">Mot de passe</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Email">
-                </div>
-            </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-              <button type="button" class="btn btn-primary">Valider</button>
-            </div>
-          </div>
-        </div>
-    </div>
-    
-    <div class="modal fade" id="connexion" tabindex="-1" role="dialog" aria-labelledby="connexion" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              <h4 class="modal-title" id="myModalLabel">Connexion</h4>
-            </div>
-            <div class="modal-body">
-              <form role="form">
-                <div class="form-group">
-                  <label for="pseudo">Pseudo</label>
-                  <input type="text" class="form-control" id="Pseudo" placeholder="Pseudo">
-                </div>
-                <div class="form-group">
-                  <label for="password">Mot de passe</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
-                </div>
-            </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-              <button type="button" class="btn btn-primary">Connexion</button>
-            </div>
-          </div>
-        </div>
-    </div>
-        
-        {% block alerts %}
-            {% include 'elements/alerts.html.twig' %}
-        {% endblock %}
-        {% block content %}
-        {% endblock %}
+    {% block modal %}
+        {% include 'elements/modal.html.twig' %}
+    {% endblock %}   
+    {% block alerts %}
+        {% include 'elements/alerts.html.twig' %}
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
         
       
         <div class="shell clearfix">
