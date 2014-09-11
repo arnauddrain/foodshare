@@ -5,43 +5,49 @@
         <h2 class="centered">
             <span>Mon restaurant</span>
         </h2>
-        <form>
+        <script type="text/javascript">
+            function addFood()
+            {
+                var str;
+                str = nbr.value + ' ' + food.value + ' à ' + prix.value + ' €';
+                food.value = '';
+                prix.value = '';
+                nbr.value = '';
+                $('select[name=menu]').append('<option>' + str + '</option>');
+            }
 
-	    <table style="width:100%">
- 		<tr>
- 			<td>Choix du plat :</td>
-	        <td>
-	        	<select name="menu">
- 				<option value="couscous">Couscous</option>
-				<option value="rumsteak">Coueur de rumsteak</option>
- 				<option value="crepes">Crêpes</option>
-			</select>
-		</td>
-		</tr>
-		<tr>
-			<td>Nombre de couverts :</td>
-			<td><input type="text" name="ncouvert" style="border-style: solid;border-width: 1px;"></td>
-        </tr>
-        <tr>
-        	<td>Prix : </td>
-			<td><input type="text" name="euro" style="border-style: solid;border-width: 1px;"> €</td>
-        </tr>
-        <tr>
-        	<td> Repas sur :</td>
-		</tr>
-		<tr>
-			<td></td>
-        	<td><input type="checkbox" name="repas" value="place">	place</td>
-        </tr>
-        <tr>
-			<td></td>
-        	<td><input type="checkbox" name="repas" value="emporter">	à emporter</td>
-        </tr>
-        <tr>
-        	<td><input type="submit" value="Valider"></td>
-        </tr>
+            function tryRemove(index)
+            {
+                if ($(this).prop('selected'))
+                {
+                    $(this).remove();
+                }
+            }
+
+            function rmFood()
+            {
+                $('option').each(tryRemove);
+            }
+        </script>
+
+        <form role="form" action="/demo/addMenu">
+            <select multiple class="form-control" style="margin-bottom: 15px;" name="menu">
+            </select>
+            <input type="button" class="btn btn-default" value="Retirer un plat" onclick="rmFood();" style="margin-bottom: 15px;" />
+
+            <div class="row" style="margin-bottom: 15px;">
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="food" placeholder="Titre du plat">
+                </div>
+                <div class="col-md-1">
+                    <input type="text" class="form-control" id="prix" placeholder="Prix €">
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" id="nbr" placeholder="Portions">
+                </div>
+            </div>
+            <input type="button" class="btn btn-default" value="Ajouter un plat" onclick="addFood();" />
+            <button type="submit" class="btn btn-default">Valider mon menu</button>
         </form>
-		</table>
-        
     </section>
 {% endblock %}

@@ -60,6 +60,12 @@ class Demo extends APP_Controller {
 		$this->alerts->add('Notation envoyée', 'success');
 		redirect('/');
 	}
+
+	public function addMenu()
+	{
+		$this->alerts->add('Menu ajouté', 'success');
+		redirect('/');
+	}
 }
 
 /* End of file welcome.php */
