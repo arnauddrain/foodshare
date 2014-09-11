@@ -66,6 +66,12 @@ class Demo extends APP_Controller {
 		$this->alerts->add('Menu ajouté', 'success');
 		redirect('/');
 	}
+
+	public function doProfile()
+	{
+		$this->alerts->add('Profil modifié', 'success');
+		redirect('/');
+	}
 }
 
 /* End of file welcome.php */
