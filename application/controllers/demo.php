@@ -49,6 +49,17 @@ class Demo extends APP_Controller {
             $this->alerts->add('Repas réservé', 'success');
             redirect('/');
 	}
+
+	public function note()
+	{
+		$this->show_page('demo/note');
+	}
+
+	public function noter()
+	{
+		$this->alerts->add('Notation envoyée', 'success');
+		redirect('/');
+	}
 }
 
 /* End of file welcome.php */

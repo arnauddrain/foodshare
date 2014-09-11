@@ -1,0 +1,24 @@
+{% extends 'templates/welcome.html.twig' %}
+{% block content %}
+<section id="slider" class="shell clearfix garnish" style="padding: 20px; min-height: 200px;">
+	<h2 class="centered">
+        <span>Noter Tang</span>
+    </h2>
+    <form role="form" method="post" action="/demo/noter">
+    	<label for="note">Note:</label>
+    	<select class="form-control" id="note" style="width: 70px;">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+       	</select>
+       	<br/>
+       	<label for="commentary">Remarques, suggestions:</label>
+       	<textarea class="form-control" rows="3"></textarea>
+       	<br/>
+    	<button type="submit" class="btn btn-default">Noter Tang</button>
+    </form>
+</section>
+{% endblock %}
