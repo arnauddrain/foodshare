@@ -53,6 +53,11 @@ class User extends APP_Controller {
             $this->show_page('user/registration');
 	}
 	
+        public function profile()
+        {
+            $this->show_page('/user/profile');
+        }
+        
 	public function login()
 	{
 		$pseudo = $this->input->post('pseudo');
