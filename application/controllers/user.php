@@ -1,5 +1,8 @@
 <?php
 
+if (!isset($_SESSION))
+	session_start();
+
 if (!defined('BASEPATH'))
 	exit('No direct script access allowed');
 
@@ -55,11 +58,12 @@ class User extends APP_Controller {
 	
         public function profile()
         {
-            $this->show_page('/user/profile');
+            $this->show_page('/user/profile', array('user_name' => $_SESSION['login']));
         }
         
 	public function login()
 	{
+		$_SESSION['login'] = $this->input->post('pseudo');
 		$pseudo = $this->input->post('pseudo');
 		$password = $this->input->post('password');
 		
